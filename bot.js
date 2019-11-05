@@ -162,5 +162,5 @@ client.on('message', async message => {
     }
   }
 });
-client.login('NjAwNzA1OTM1MjI4NDAzNzIy.Xb8Zug.RO2dekrOS1X3fJBOzmTHoQ2ofbA');
+client.login('');
 //ByМетøчка for himself v1.3
