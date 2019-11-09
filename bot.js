@@ -2,11 +2,11 @@ const Discord = require('discord.js');
 const Canvas = require('canvas');
 const client = new Discord.Client();
 const { get } = require("https");
-
+ 
 var answer = 'none';
 var URL = 'none';
 var mode = 'hiragana';
-var romaji = [ 
+var romaji = [
   'a','i','u','e','o',
   'ka','ki','ku','ke','ko',
   'sa','shi','su','se','so',
@@ -60,8 +60,8 @@ var katakana = [
   'バ','ビ','ブ','ベ','ボ',
   'パ','ピ','プ','ペ','ポ'
 ]
-
-async function TEST(){
+ 
+async function NEKOS_API(){
   get("https://neko-love.xyz/api/v1/neko", (res) => {
   const { statusCode } = res;
   if (statusCode != 200) {
@@ -85,17 +85,17 @@ async function TEST(){
   console.error(err.message);
 })
 };
-
-TEST();
-
+ 
+NEKOS_API();
+ 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
+  client.user.setGame('j!help for help')
 });
-
+ 
 client.on('message', async message => {
   async function RENDER(string1, string2){
-    await TEST()
-    message.reply('правильно.');
+    await NEKOS_API()
     const canvas = Canvas.createCanvas(250, 250);
     const ctx = canvas.getContext('2d');
     ctx.rect(20, 20, canvas.width-40, canvas.height-40);
@@ -143,18 +143,33 @@ client.on('message', async message => {
     RENDER(katakana[rand], romaji[rand])
   }
   if (message.content.toLowerCase() == answer) {
+    console.log(URL.slice(URL.length - 5, URL.length))
+    if(URL.slice(URL.length - 5, URL.length) == '.webp')
+    URL = 'https://cdn.discordapp.com/attachments/600294780144189481/641639925174763530/breakbot.jpg';
+    message.reply('правильно.');
     if(mode == 'hiragana')
       HIRAGANA();
     if(mode == 'katakana')
       KATAKANA();
   }
   if (message.content.toLowerCase().slice(0, 2) == 'j!') {
+    if(message.content.toLowerCase().slice(2, message.content.length) == 'help'){
+      HelpEmbed()
+      function HelpEmbed() {
+        message.channel.send(new Discord.RichEmbed()
+            .setColor("0099ff")
+            .setAuthor("MetaBOT", "https://cdn.discordapp.com/avatars/600705935228403722/3daed4e4f4174552d893477cc7d38c87.png?size=2048")
+            .setDescription("Биб-буп! Konnichiha, бро.  Я ,MetaBOT, создан для помощи в изучении японского языка и подготовки к экзамену  JLPT n5.\n\n**j!help** - Краткий список команд и объяснение их предназначение\n\nА вот и мои команды:\n\n**j!help** - Краткий список команд и объяснение их предназначение\n\n**j!hiragana** - запускает тренажер для запоминания хираганы. Префикс перед ответом ставить не надо.\n\n**j!katakana** - запускает тренажер для запоминания катаканы. Префикс перед ответом ставить не надо.\n\nИсходный код: https://pastebin.com/y1NQXDMh")
+            .setTitle("Информация")
+            .setFooter("ByМетøчка v1.4", "https://avatars2.githubusercontent.com/u/49251114?s=460&amp;v=4"));
+    }
+  }
     if(message.content.toLowerCase().slice(2, message.content.length) == 'hiragana'){
       mode = 'hiragana';
       HIRAGANA();
       message.channel.send('Ну раз хирагана, то хирагана.')
     }
-
+ 
     if(message.content.toLowerCase().slice(2, message.content.length) == 'katakana'){
       mode = 'katakana';
       KATAKANA();
@@ -162,5 +177,6 @@ client.on('message', async message => {
     }
   }
 });
+ 
 client.login('');
-//ByМетøчка for himself v1.3
+//ByМетøчка for himself v1.4
