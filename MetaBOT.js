@@ -139,4 +139,4 @@ client.on('messageUpdate', (msg, newmsg) => {
 })
 
 client.login(config.token);
-//ByМетøчка for himself v1.4
+//ByМетøчка for himself v1.5
