@@ -4,6 +4,7 @@ const client = new Discord.Client();
 const { get } = require("https");
 let config = require('./config.json');
 let kana = require('./kana.json');
+let vocabulary = require('./vocabulary.json');
  
 var answer = 'none';
 var URL = 'none';
@@ -82,6 +83,53 @@ client.on('message', async message => {
     });
     answer = string2;
   }
+
+  async function RENDERREAD(string1, string2, string3){
+    await NEKOS_API()
+    const canvas = Canvas.createCanvas(250, 250);
+    const ctx = canvas.getContext('2d');
+    ctx.rect(20, 20, canvas.width-40, canvas.height-40);
+    ctx.lineJoin = "round";
+    ctx.lineWidth = 40;
+    ctx.stroke();
+    ctx.closePath();
+    ctx.fill();
+    ctx.globalCompositeOperation = 'source-in';
+    const background = await Canvas.loadImage(URL);
+    if(background.width>background.height)
+     ctx.drawImage(background, (background.width-background.height)/2, 0, background.height, background.height, 0, 0, canvas.width, canvas.height);
+    else
+      ctx.drawImage(background, 0, (background.height-background.width)/2, background.width, background.width, 0, 0, canvas.width, canvas.height);
+    ctx.globalCompositeOperation = 'source-over';
+    ctx.font = 250/string1.length+'px sans-serif';
+    ctx.fillStyle = '#000000';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(string1, 125, 125);
+    ctx.font = 250/string1.length+'px sans-serif';
+    ctx.fillStyle = '#ffffff';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText(string1, 125, 125);
+    ctx.strokeStyle = "#000000";
+    ctx.font = 250/string1.length+'px sans-serif';
+    ctx.lineWidth = 2
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.strokeText(string1, 125, 125);
+    const buf = canvas.toBuffer('image/png');
+    message.channel.send("ну давай, прочти это...", {
+      embed: {
+        color: 0x7486C2,
+        description:'Ответ:  ||'+ string2 +'||\n\nПеревод: ||'+ string3 +'||',
+      },
+      files: [{
+        attachment: buf,
+        name: "hiragana.png"
+      }]
+    });
+    answer = string2;
+  }
   function HIRAGANA(){
     var rand = Math.floor(Math.random() * (70 - 0 + 1)) + 0;
     RENDER(kana[rand].hiragana, kana[rand].romaji)
@@ -90,16 +138,26 @@ client.on('message', async message => {
     var rand = Math.floor(Math.random() * (70 - 0 + 1)) + 0;
     RENDER(kana[rand].katakana, kana[rand].romaji)
   }
-  if (message.content.toLowerCase() == answer) {
+  function READ(){
+    var rand = Math.floor(Math.random() * (726 - 0 + 1)) + 0;
+    RENDERREAD(vocabulary[rand].kana, vocabulary[rand].romaji,vocabulary[rand].definition)
+  }
+  if (message.content.toLowerCase() == answer||message.content.toLowerCase() == 'skip') {
     console.log(URL.slice(URL.length - 5, URL.length))
     if(URL.slice(URL.length - 5, URL.length) == '.webp')
     URL = 'https://cdn.discordapp.com/attachments/600294780144189481/641639925174763530/breakbot.jpg';
+    if(message.content.toLowerCase() == 'skip')
+    message.reply('Плохо.:rage:');
+    else
     message.reply('правильно.');
     if(mode == 'hiragana')
       HIRAGANA();
     if(mode == 'katakana')
       KATAKANA();
+    if(mode == 'read')
+      READ();
   }
+  
   if (message.content.toLowerCase().slice(0, 2) == 'j!') {
     if(message.content.toLowerCase().slice(2, message.content.length) == 'help'){
       HelpEmbed()
@@ -107,9 +165,9 @@ client.on('message', async message => {
         message.channel.send(new Discord.RichEmbed()
             .setColor("0099ff")
             .setAuthor("MetaBOT", "https://cdn.discordapp.com/avatars/600705935228403722/3daed4e4f4174552d893477cc7d38c87.png?size=2048")
-            .setDescription("Биб-буп! Konnichiha, бро.  Я ,MetaBOT, создан для помощи в изучении японского языка и подготовки к экзамену  JLPT n5.\n\nА вот и мои команды:\n\n**j!help** - Краткий список команд и объяснение их предназначение\n\n**j!hiragana** - запускает тренажер для запоминания хираганы. Префикс перед ответом ставить не надо.\n\n**j!katakana** - запускает тренажер для запоминания катаканы. Префикс перед ответом ставить не надо.\n\nИсходный код: https://github.com/Metasux/MetaJesus")
+            .setDescription("Биб-буп! Konnichiha, бро.  Я ,MetaBOT, создан для помощи в изучении японского языка и подготовки к экзамену  JLPT n5.\n\nА вот и мои команды:\n\n**j!help** - Краткий список команд и объяснение их предназначение\n\n**j!hiragana** - запускает тренажер для запоминания хираганы. Префикс перед ответом ставить не надо.\n\n**j!katakana** - запускает тренажер для запоминания катаканы. Префикс перед ответом ставить не надо.\n\n**j!read** - запускает тренажер для чтения слов на хирагане и катакане. Префикс перед ответом ставить не надо.\n\nИсходный код: https://github.com/Metasux/MetaJesus")
             .setTitle("Информация")
-            .setFooter("ByМетøчка v1.4", "https://avatars2.githubusercontent.com/u/49251114?s=460&amp;v=4"));
+            .setFooter("ByМетøчка v1.6", "https://avatars2.githubusercontent.com/u/49251114?s=460&amp;v=4"));
     }
   }
     if(message.content.toLowerCase().slice(2, message.content.length) == 'hiragana'){
@@ -122,6 +180,11 @@ client.on('message', async message => {
       mode = 'katakana';
       KATAKANA();
       message.channel.send('Ну раз катакана, то катакана.')
+    }
+    if(message.content.toLowerCase().slice(2, message.content.length) == 'read'){
+      mode = 'read';
+      READ();
+      message.channel.send('Ничего себе, читать будешь? Ну оки-доки!')
     }
   }
 });
@@ -139,4 +202,4 @@ client.on('messageUpdate', (msg, newmsg) => {
 })
 
 client.login(config.token);
-//ByМетøчка for himself v1.5
+//ByМетøчка for himself v1.6
