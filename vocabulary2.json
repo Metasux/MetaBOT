@@ -1,0 +1,5002 @@
+{
+    "0": {
+        "kana": "ように",
+        "romaji": "-Yō ni",
+        "definition": "as"
+    },
+    "1": {
+        "kana": "私は",
+        "romaji": "watashi wa",
+        "definition": "I"
+    },
+    "2": {
+        "kana": "彼の",
+        "romaji": "kare no",
+        "definition": "his"
+    },
+    "3": {
+        "kana": "その",
+        "romaji": "sono",
+        "definition": "that"
+    },
+    "4": {
+        "kana": "彼",
+        "romaji": "kare",
+        "definition": "he"
+    },
+    "5": {
+        "kana": "た",
+        "romaji": "ta",
+        "definition": "was"
+    },
+    "6": {
+        "kana": "ために",
+        "romaji": "tame ni",
+        "definition": "for"
+    },
+    "7": {
+        "kana": "上の",
+        "romaji": "-jō no",
+        "definition": "on"
+    },
+    "8": {
+        "kana": "アール",
+        "romaji": "āru",
+        "definition": "are"
+    },
+    "9": {
+        "kana": "とともに",
+        "romaji": "to tomoni",
+        "definition": "with"
+    },
+    "10": {
+        "kana": "彼ら",
+        "romaji": "karera",
+        "definition": "they"
+    },
+    "11": {
+        "kana": "ある",
+        "romaji": "aru",
+        "definition": "be"
+    },
+    "12": {
+        "kana": "アット",
+        "romaji": "atto",
+        "definition": "at"
+    },
+    "13": {
+        "kana": "一つ",
+        "romaji": "hitotsu",
+        "definition": "one"
+    },
+    "14": {
+        "kana": "持っている",
+        "romaji": "motte iru",
+        "definition": "have"
+    },
+    "15": {
+        "kana": "この",
+        "romaji": "kono",
+        "definition": "this"
+    },
+    "16": {
+        "kana": "から",
+        "romaji": "kara",
+        "definition": "from"
+    },
+    "17": {
+        "kana": "バイ",
+        "romaji": "bai",
+        "definition": "by"
+    },
+    "18": {
+        "kana": "ホット",
+        "romaji": "hotto",
+        "definition": "hot"
+    },
+    "19": {
+        "kana": "言葉",
+        "romaji": "kotoba",
+        "definition": "word"
+    },
+    "20": {
+        "kana": "しかし",
+        "romaji": "shikashi",
+        "definition": "but"
+    },
+    "21": {
+        "kana": "何",
+        "romaji": "nan",
+        "definition": "what"
+    },
+    "22": {
+        "kana": "いくつかの",
+        "romaji": "ikutsu ka no",
+        "definition": "some"
+    },
+    "23": {
+        "kana": "です",
+        "romaji": "desu",
+        "definition": "is"
+    },
+    "24": {
+        "kana": "それ",
+        "romaji": "sore",
+        "definition": "it"
+    },
+    "25": {
+        "kana": "あなた",
+        "romaji": "anata",
+        "definition": "you"
+    },
+    "26": {
+        "kana": "または",
+        "romaji": "matawa",
+        "definition": "or"
+    },
+    "27": {
+        "kana": "持っていた",
+        "romaji": "motte ita",
+        "definition": "had"
+    },
+    "28": {
+        "kana": "インクルード",
+        "romaji": "inkurūdo",
+        "definition": "the"
+    },
+    "29": {
+        "kana": "の",
+        "romaji": "no",
+        "definition": "of"
+    },
+    "30": {
+        "kana": "へ",
+        "romaji": "e",
+        "definition": "to"
+    },
+    "31": {
+        "kana": "そして",
+        "romaji": "soshite",
+        "definition": "and"
+    },
+    "32": {
+        "kana": "は",
+        "romaji": "wa",
+        "definition": "a"
+    },
+    "33": {
+        "kana": "で",
+        "romaji": "de",
+        "definition": "in"
+    },
+    "34": {
+        "kana": "我々",
+        "romaji": "ga 々",
+        "definition": "we"
+    },
+    "35": {
+        "kana": "缶",
+        "romaji": "Kan",
+        "definition": "can"
+    },
+    "36": {
+        "kana": "アウト",
+        "romaji": "auto",
+        "definition": "out"
+    },
+    "37": {
+        "kana": "その他",
+        "romaji": "sonota",
+        "definition": "other"
+    },
+    "38": {
+        "kana": "だった",
+        "romaji": "datta",
+        "definition": "were"
+    },
+    "39": {
+        "kana": "これ",
+        "romaji": "kore",
+        "definition": "which"
+    },
+    "40": {
+        "kana": "やる",
+        "romaji": "yaru",
+        "definition": "do"
+    },
+    "41": {
+        "kana": "それらの",
+        "romaji": "sorera no",
+        "definition": "their"
+    },
+    "42": {
+        "kana": "時間",
+        "romaji": "jikan",
+        "definition": "time"
+    },
+    "43": {
+        "kana": "もし",
+        "romaji": "moshi",
+        "definition": "if"
+    },
+    "44": {
+        "kana": "意志",
+        "romaji": "ishi",
+        "definition": "will"
+    },
+    "45": {
+        "kana": "方法",
+        "romaji": "hōhō",
+        "definition": "how"
+    },
+    "46": {
+        "kana": "前記",
+        "romaji": "zenki",
+        "definition": "said"
+    },
+    "47": {
+        "kana": "の",
+        "romaji": "no",
+        "definition": "an"
+    },
+    "48": {
+        "kana": "それぞれ",
+        "romaji": "sorezore",
+        "definition": "each"
+    },
+    "49": {
+        "kana": "言う",
+        "romaji": "iu",
+        "definition": "tell"
+    },
+    "50": {
+        "kana": "し",
+        "romaji": "shi",
+        "definition": "does"
+    },
+    "51": {
+        "kana": "セット",
+        "romaji": "setto",
+        "definition": "set"
+    },
+    "52": {
+        "kana": "個",
+        "romaji": "ko",
+        "definition": "three"
+    },
+    "53": {
+        "kana": "欲しい",
+        "romaji": "hoshī",
+        "definition": "want"
+    },
+    "54": {
+        "kana": "空気",
+        "romaji": "kūki",
+        "definition": "air"
+    },
+    "55": {
+        "kana": "よく",
+        "romaji": "yoku",
+        "definition": "well"
+    },
+    "56": {
+        "kana": "また",
+        "romaji": "mata",
+        "definition": "also"
+    },
+    "57": {
+        "kana": "遊ぶ",
+        "romaji": "asobu",
+        "definition": "play"
+    },
+    "58": {
+        "kana": "小さい",
+        "romaji": "chīsai",
+        "definition": "small"
+    },
+    "59": {
+        "kana": "終わり",
+        "romaji": "owari",
+        "definition": "end"
+    },
+    "60": {
+        "kana": "置く",
+        "romaji": "oku",
+        "definition": "put"
+    },
+    "61": {
+        "kana": "ホーム",
+        "romaji": "hōmu",
+        "definition": "home"
+    },
+    "62": {
+        "kana": "読む",
+        "romaji": "yomu",
+        "definition": "read"
+    },
+    "63": {
+        "kana": "手",
+        "romaji": "-te",
+        "definition": "hand"
+    },
+    "64": {
+        "kana": "ポート",
+        "romaji": "pōto",
+        "definition": "port"
+    },
+    "65": {
+        "kana": "大きい",
+        "romaji": "ōkī",
+        "definition": "large"
+    },
+    "66": {
+        "kana": "スペル",
+        "romaji": "superu",
+        "definition": "spell"
+    },
+    "67": {
+        "kana": "加える",
+        "romaji": "kuwaeru",
+        "definition": "add"
+    },
+    "68": {
+        "kana": "さらに",
+        "romaji": "sarani",
+        "definition": "even"
+    },
+    "69": {
+        "kana": "土地",
+        "romaji": "tochi",
+        "definition": "land"
+    },
+    "70": {
+        "kana": "ここに",
+        "romaji": "koko ni",
+        "definition": "here"
+    },
+    "71": {
+        "kana": "しなければならない",
+        "romaji": "shinakereba naranai",
+        "definition": "must"
+    },
+    "72": {
+        "kana": "大きい",
+        "romaji": "ōkī",
+        "definition": "big"
+    },
+    "73": {
+        "kana": "高い",
+        "romaji": "takai",
+        "definition": "high"
+    },
+    "74": {
+        "kana": "そのような",
+        "romaji": "sono yōna",
+        "definition": "such"
+    },
+    "75": {
+        "kana": "続く",
+        "romaji": "tsudzuku",
+        "definition": "follow"
+    },
+    "76": {
+        "kana": "行為",
+        "romaji": "kōi",
+        "definition": "act"
+    },
+    "77": {
+        "kana": "なぜ",
+        "romaji": "naze",
+        "definition": "why"
+    },
+    "78": {
+        "kana": "頼む",
+        "romaji": "tanomu",
+        "definition": "ask"
+    },
+    "79": {
+        "kana": "人々",
+        "romaji": "hito 々",
+        "definition": "men"
+    },
+    "80": {
+        "kana": "変更",
+        "romaji": "Henkō",
+        "definition": "change"
+    },
+    "81": {
+        "kana": "行ってきました",
+        "romaji": "ittekimashita",
+        "definition": "went"
+    },
+    "82": {
+        "kana": "光",
+        "romaji": "-kō",
+        "definition": "light"
+    },
+    "83": {
+        "kana": "種類",
+        "romaji": "shurui",
+        "definition": "kind"
+    },
+    "84": {
+        "kana": "オフ",
+        "romaji": "ofu",
+        "definition": "off"
+    },
+    "85": {
+        "kana": "必要",
+        "romaji": "hitsuyō",
+        "definition": "need"
+    },
+    "86": {
+        "kana": "家",
+        "romaji": "-ka",
+        "definition": "house"
+    },
+    "87": {
+        "kana": "絵",
+        "romaji": "e",
+        "definition": "picture"
+    },
+    "88": {
+        "kana": "試す",
+        "romaji": "tamesu",
+        "definition": "try"
+    },
+    "89": {
+        "kana": "私たち",
+        "romaji": "watashitachi",
+        "definition": "us"
+    },
+    "90": {
+        "kana": "再び",
+        "romaji": "futatabi",
+        "definition": "again"
+    },
+    "91": {
+        "kana": "動物",
+        "romaji": "dōbutsu",
+        "definition": "animal"
+    },
+    "92": {
+        "kana": "ポイント",
+        "romaji": "pointo",
+        "definition": "point"
+    },
+    "93": {
+        "kana": "母",
+        "romaji": "haha",
+        "definition": "mother"
+    },
+    "94": {
+        "kana": "世界",
+        "romaji": "sekai",
+        "definition": "world"
+    },
+    "95": {
+        "kana": "近く",
+        "romaji": "chikaku",
+        "definition": "near"
+    },
+    "96": {
+        "kana": "ビルド",
+        "romaji": "birudo",
+        "definition": "build"
+    },
+    "97": {
+        "kana": "自己",
+        "romaji": "jiko",
+        "definition": "self"
+    },
+    "98": {
+        "kana": "地球",
+        "romaji": "chikyū",
+        "definition": "earth"
+    },
+    "99": {
+        "kana": "父",
+        "romaji": "chichi",
+        "definition": "father"
+    },
+    "100": {
+        "kana": "任意の",
+        "romaji": "",
+        "definition": "any"
+    },
+    "101": {
+        "kana": "新しい",
+        "romaji": "",
+        "definition": "new"
+    },
+    "102": {
+        "kana": "仕事",
+        "romaji": "",
+        "definition": "work"
+    },
+    "103": {
+        "kana": "パート",
+        "romaji": "",
+        "definition": "part"
+    },
+    "104": {
+        "kana": "取る",
+        "romaji": "",
+        "definition": "take"
+    },
+    "105": {
+        "kana": "ゲット",
+        "romaji": "",
+        "definition": "get"
+    },
+    "106": {
+        "kana": "場所",
+        "romaji": "",
+        "definition": "place"
+    },
+    "107": {
+        "kana": "製",
+        "romaji": "",
+        "definition": "made"
+    },
+    "108": {
+        "kana": "暮らす",
+        "romaji": "",
+        "definition": "live"
+    },
+    "109": {
+        "kana": "どこ",
+        "romaji": "",
+        "definition": "where"
+    },
+    "110": {
+        "kana": "後に",
+        "romaji": "",
+        "definition": "after"
+    },
+    "111": {
+        "kana": "バック",
+        "romaji": "",
+        "definition": "back"
+    },
+    "112": {
+        "kana": "少し",
+        "romaji": "",
+        "definition": "little"
+    },
+    "113": {
+        "kana": "唯一の",
+        "romaji": "",
+        "definition": "only"
+    },
+    "114": {
+        "kana": "ラウンド",
+        "romaji": "",
+        "definition": "round"
+    },
+    "115": {
+        "kana": "男",
+        "romaji": "",
+        "definition": "man"
+    },
+    "116": {
+        "kana": "年",
+        "romaji": "",
+        "definition": "year"
+    },
+    "117": {
+        "kana": "来た",
+        "romaji": "",
+        "definition": "came"
+    },
+    "118": {
+        "kana": "ショー",
+        "romaji": "",
+        "definition": "show"
+    },
+    "119": {
+        "kana": "すべての",
+        "romaji": "",
+        "definition": "every"
+    },
+    "120": {
+        "kana": "良い",
+        "romaji": "",
+        "definition": "good"
+    },
+    "121": {
+        "kana": "私に",
+        "romaji": "",
+        "definition": "me"
+    },
+    "122": {
+        "kana": "与える",
+        "romaji": "",
+        "definition": "give"
+    },
+    "123": {
+        "kana": "私たちの",
+        "romaji": "",
+        "definition": "our"
+    },
+    "124": {
+        "kana": "下",
+        "romaji": "",
+        "definition": "under"
+    },
+    "125": {
+        "kana": "名前",
+        "romaji": "",
+        "definition": "name"
+    },
+    "126": {
+        "kana": "非常に",
+        "romaji": "",
+        "definition": "very"
+    },
+    "127": {
+        "kana": "スルー",
+        "romaji": "",
+        "definition": "through"
+    },
+    "128": {
+        "kana": "ただ",
+        "romaji": "",
+        "definition": "just"
+    },
+    "129": {
+        "kana": "フォーム",
+        "romaji": "",
+        "definition": "form"
+    },
+    "130": {
+        "kana": "文",
+        "romaji": "",
+        "definition": "sentence"
+    },
+    "131": {
+        "kana": "素晴らしい",
+        "romaji": "",
+        "definition": "great"
+    },
+    "132": {
+        "kana": "思う",
+        "romaji": "",
+        "definition": "think"
+    },
+    "133": {
+        "kana": "言う",
+        "romaji": "",
+        "definition": "say"
+    },
+    "134": {
+        "kana": "助け",
+        "romaji": "",
+        "definition": "help"
+    },
+    "135": {
+        "kana": "低い",
+        "romaji": "",
+        "definition": "low"
+    },
+    "136": {
+        "kana": "ライン",
+        "romaji": "",
+        "definition": "line"
+    },
+    "137": {
+        "kana": "異なる",
+        "romaji": "",
+        "definition": "differ"
+    },
+    "138": {
+        "kana": "ターン",
+        "romaji": "",
+        "definition": "turn"
+    },
+    "139": {
+        "kana": "原因",
+        "romaji": "",
+        "definition": "cause"
+    },
+    "140": {
+        "kana": "ずっと",
+        "romaji": "",
+        "definition": "much"
+    },
+    "141": {
+        "kana": "意味する",
+        "romaji": "",
+        "definition": "mean"
+    },
+    "142": {
+        "kana": "前に",
+        "romaji": "",
+        "definition": "before"
+    },
+    "143": {
+        "kana": "移動",
+        "romaji": "",
+        "definition": "move"
+    },
+    "144": {
+        "kana": "権利",
+        "romaji": "",
+        "definition": "right"
+    },
+    "145": {
+        "kana": "男の子",
+        "romaji": "",
+        "definition": "boy"
+    },
+    "146": {
+        "kana": "古い",
+        "romaji": "",
+        "definition": "old"
+    },
+    "147": {
+        "kana": "あまりに",
+        "romaji": "",
+        "definition": "too"
+    },
+    "148": {
+        "kana": "同じ",
+        "romaji": "",
+        "definition": "same"
+    },
+    "149": {
+        "kana": "彼女",
+        "romaji": "",
+        "definition": "she"
+    },
+    "150": {
+        "kana": "すべて",
+        "romaji": "",
+        "definition": "all"
+    },
+    "151": {
+        "kana": "そこ",
+        "romaji": "",
+        "definition": "there"
+    },
+    "152": {
+        "kana": "時",
+        "romaji": "",
+        "definition": "when"
+    },
+    "153": {
+        "kana": "アップ",
+        "romaji": "",
+        "definition": "up"
+    },
+    "154": {
+        "kana": "使用",
+        "romaji": "",
+        "definition": "use"
+    },
+    "155": {
+        "kana": "あなたの",
+        "romaji": "",
+        "definition": "your"
+    },
+    "156": {
+        "kana": "道",
+        "romaji": "",
+        "definition": "way"
+    },
+    "157": {
+        "kana": "約",
+        "romaji": "",
+        "definition": "about"
+    },
+    "158": {
+        "kana": "多くの",
+        "romaji": "",
+        "definition": "many"
+    },
+    "159": {
+        "kana": "その後",
+        "romaji": "",
+        "definition": "then"
+    },
+    "160": {
+        "kana": "それら",
+        "romaji": "",
+        "definition": "them"
+    },
+    "161": {
+        "kana": "書く",
+        "romaji": "",
+        "definition": "write"
+    },
+    "162": {
+        "kana": "でしょう",
+        "romaji": "",
+        "definition": "would"
+    },
+    "163": {
+        "kana": "ような",
+        "romaji": "",
+        "definition": "like"
+    },
+    "164": {
+        "kana": "そう",
+        "romaji": "",
+        "definition": "so"
+    },
+    "165": {
+        "kana": "これらの",
+        "romaji": "",
+        "definition": "these"
+    },
+    "166": {
+        "kana": "彼女の",
+        "romaji": "",
+        "definition": "her"
+    },
+    "167": {
+        "kana": "長い",
+        "romaji": "",
+        "definition": "long"
+    },
+    "168": {
+        "kana": "作る",
+        "romaji": "",
+        "definition": "make"
+    },
+    "169": {
+        "kana": "もの",
+        "romaji": "",
+        "definition": "thing"
+    },
+    "170": {
+        "kana": "見る",
+        "romaji": "",
+        "definition": "see"
+    },
+    "171": {
+        "kana": "彼に",
+        "romaji": "",
+        "definition": "him"
+    },
+    "172": {
+        "kana": "二つ",
+        "romaji": "",
+        "definition": "two"
+    },
+    "173": {
+        "kana": "があります",
+        "romaji": "",
+        "definition": "has"
+    },
+    "174": {
+        "kana": "見える",
+        "romaji": "",
+        "definition": "look"
+    },
+    "175": {
+        "kana": "多くの",
+        "romaji": "",
+        "definition": "more"
+    },
+    "176": {
+        "kana": "日",
+        "romaji": "",
+        "definition": "day"
+    },
+    "177": {
+        "kana": "可能性",
+        "romaji": "",
+        "definition": "could"
+    },
+    "178": {
+        "kana": "行く",
+        "romaji": "",
+        "definition": "go"
+    },
+    "179": {
+        "kana": "来る",
+        "romaji": "",
+        "definition": "come"
+    },
+    "180": {
+        "kana": "やった",
+        "romaji": "",
+        "definition": "did"
+    },
+    "181": {
+        "kana": "番号",
+        "romaji": "",
+        "definition": "number"
+    },
+    "182": {
+        "kana": "聞こえる",
+        "romaji": "",
+        "definition": "sound"
+    },
+    "183": {
+        "kana": "いいえ",
+        "romaji": "",
+        "definition": "no"
+    },
+    "184": {
+        "kana": "最も",
+        "romaji": "",
+        "definition": "most"
+    },
+    "185": {
+        "kana": "人々",
+        "romaji": "",
+        "definition": "people"
+    },
+    "186": {
+        "kana": "私の",
+        "romaji": "",
+        "definition": "my"
+    },
+    "187": {
+        "kana": "オーバー",
+        "romaji": "",
+        "definition": "over"
+    },
+    "188": {
+        "kana": "知っている",
+        "romaji": "",
+        "definition": "know"
+    },
+    "189": {
+        "kana": "水",
+        "romaji": "",
+        "definition": "water"
+    },
+    "190": {
+        "kana": "比べて",
+        "romaji": "",
+        "definition": "than"
+    },
+    "191": {
+        "kana": "コール",
+        "romaji": "",
+        "definition": "call"
+    },
+    "192": {
+        "kana": "最初の",
+        "romaji": "",
+        "definition": "first"
+    },
+    "193": {
+        "kana": "誰",
+        "romaji": "",
+        "definition": "who"
+    },
+    "194": {
+        "kana": "よい",
+        "romaji": "",
+        "definition": "may"
+    },
+    "195": {
+        "kana": "ダウン",
+        "romaji": "",
+        "definition": "down"
+    },
+    "196": {
+        "kana": "サイド",
+        "romaji": "",
+        "definition": "side"
+    },
+    "197": {
+        "kana": "き",
+        "romaji": "",
+        "definition": "been"
+    },
+    "198": {
+        "kana": "今",
+        "romaji": "",
+        "definition": "now"
+    },
+    "199": {
+        "kana": "見つける",
+        "romaji": "",
+        "definition": "find"
+    },
+    "200": {
+        "kana": "ヘッド",
+        "romaji": "",
+        "definition": "head"
+    },
+    "201": {
+        "kana": "スタンド",
+        "romaji": "",
+        "definition": "stand"
+    },
+    "202": {
+        "kana": "独自の",
+        "romaji": "",
+        "definition": "own"
+    },
+    "203": {
+        "kana": "ページ",
+        "romaji": "",
+        "definition": "page"
+    },
+    "204": {
+        "kana": "べき",
+        "romaji": "",
+        "definition": "should"
+    },
+    "205": {
+        "kana": "国",
+        "romaji": "",
+        "definition": "country"
+    },
+    "206": {
+        "kana": "発見",
+        "romaji": "",
+        "definition": "found"
+    },
+    "207": {
+        "kana": "答え",
+        "romaji": "",
+        "definition": "answer"
+    },
+    "208": {
+        "kana": "学校",
+        "romaji": "",
+        "definition": "school"
+    },
+    "209": {
+        "kana": "成長する",
+        "romaji": "",
+        "definition": "grow"
+    },
+    "210": {
+        "kana": "研究",
+        "romaji": "",
+        "definition": "study"
+    },
+    "211": {
+        "kana": "まだ",
+        "romaji": "",
+        "definition": "still"
+    },
+    "212": {
+        "kana": "学ぶ",
+        "romaji": "",
+        "definition": "learn"
+    },
+    "213": {
+        "kana": "植物",
+        "romaji": "",
+        "definition": "plant"
+    },
+    "214": {
+        "kana": "カバー",
+        "romaji": "",
+        "definition": "cover"
+    },
+    "215": {
+        "kana": "食品",
+        "romaji": "",
+        "definition": "food"
+    },
+    "216": {
+        "kana": "太陽",
+        "romaji": "",
+        "definition": "sun"
+    },
+    "217": {
+        "kana": "つの",
+        "romaji": "",
+        "definition": "four"
+    },
+    "218": {
+        "kana": "間に",
+        "romaji": "",
+        "definition": "between"
+    },
+    "219": {
+        "kana": "状態",
+        "romaji": "",
+        "definition": "state"
+    },
+    "220": {
+        "kana": "キープ",
+        "romaji": "",
+        "definition": "keep"
+    },
+    "221": {
+        "kana": "目",
+        "romaji": "",
+        "definition": "eye"
+    },
+    "222": {
+        "kana": "ネバー",
+        "romaji": "",
+        "definition": "never"
+    },
+    "223": {
+        "kana": "最後の",
+        "romaji": "",
+        "definition": "last"
+    },
+    "224": {
+        "kana": "てみましょう",
+        "romaji": "",
+        "definition": "let"
+    },
+    "225": {
+        "kana": "考え",
+        "romaji": "",
+        "definition": "thought"
+    },
+    "226": {
+        "kana": "街",
+        "romaji": "",
+        "definition": "city"
+    },
+    "227": {
+        "kana": "ツリー",
+        "romaji": "",
+        "definition": "tree"
+    },
+    "228": {
+        "kana": "クロス",
+        "romaji": "",
+        "definition": "cross"
+    },
+    "229": {
+        "kana": "農場",
+        "romaji": "",
+        "definition": "farm"
+    },
+    "230": {
+        "kana": "ハード",
+        "romaji": "",
+        "definition": "hard"
+    },
+    "231": {
+        "kana": "スタート",
+        "romaji": "",
+        "definition": "start"
+    },
+    "232": {
+        "kana": "可能性がある",
+        "romaji": "",
+        "definition": "might"
+    },
+    "233": {
+        "kana": "物語",
+        "romaji": "",
+        "definition": "story"
+    },
+    "234": {
+        "kana": "のこぎり",
+        "romaji": "",
+        "definition": "saw"
+    },
+    "235": {
+        "kana": "遠く",
+        "romaji": "",
+        "definition": "far"
+    },
+    "236": {
+        "kana": "海",
+        "romaji": "",
+        "definition": "sea"
+    },
+    "237": {
+        "kana": "描く",
+        "romaji": "",
+        "definition": "draw"
+    },
+    "238": {
+        "kana": "左",
+        "romaji": "",
+        "definition": "left"
+    },
+    "239": {
+        "kana": "遅く",
+        "romaji": "",
+        "definition": "late"
+    },
+    "240": {
+        "kana": "ラン",
+        "romaji": "",
+        "definition": "run"
+    },
+    "241": {
+        "kana": "ない",
+        "romaji": "",
+        "definition": "don’t"
+    },
+    "242": {
+        "kana": "一方、",
+        "romaji": "",
+        "definition": "while"
+    },
+    "243": {
+        "kana": "プレス",
+        "romaji": "",
+        "definition": "press"
+    },
+    "244": {
+        "kana": "クローズ",
+        "romaji": "",
+        "definition": "close"
+    },
+    "245": {
+        "kana": "夜",
+        "romaji": "",
+        "definition": "night"
+    },
+    "246": {
+        "kana": "リアル",
+        "romaji": "",
+        "definition": "real"
+    },
+    "247": {
+        "kana": "生活",
+        "romaji": "",
+        "definition": "life"
+    },
+    "248": {
+        "kana": "少数",
+        "romaji": "",
+        "definition": "few"
+    },
+    "249": {
+        "kana": "北",
+        "romaji": "",
+        "definition": "north"
+    },
+    "250": {
+        "kana": "ブック",
+        "romaji": "",
+        "definition": "book"
+    },
+    "251": {
+        "kana": "運ぶ",
+        "romaji": "",
+        "definition": "carry"
+    },
+    "252": {
+        "kana": "かかった",
+        "romaji": "",
+        "definition": "took"
+    },
+    "253": {
+        "kana": "科学",
+        "romaji": "",
+        "definition": "science"
+    },
+    "254": {
+        "kana": "食べる",
+        "romaji": "",
+        "definition": "eat"
+    },
+    "255": {
+        "kana": "部屋",
+        "romaji": "",
+        "definition": "room"
+    },
+    "256": {
+        "kana": "友人",
+        "romaji": "",
+        "definition": "friend"
+    },
+    "257": {
+        "kana": "始まった",
+        "romaji": "",
+        "definition": "began"
+    },
+    "258": {
+        "kana": "アイデア",
+        "romaji": "",
+        "definition": "idea"
+    },
+    "259": {
+        "kana": "魚",
+        "romaji": "",
+        "definition": "fish"
+    },
+    "260": {
+        "kana": "山",
+        "romaji": "",
+        "definition": "mountain"
+    },
+    "261": {
+        "kana": "停止",
+        "romaji": "",
+        "definition": "stop"
+    },
+    "262": {
+        "kana": "一度",
+        "romaji": "",
+        "definition": "once"
+    },
+    "263": {
+        "kana": "ベース",
+        "romaji": "",
+        "definition": "base"
+    },
+    "264": {
+        "kana": "聞く",
+        "romaji": "",
+        "definition": "hear"
+    },
+    "265": {
+        "kana": "馬",
+        "romaji": "",
+        "definition": "horse"
+    },
+    "266": {
+        "kana": "カット",
+        "romaji": "",
+        "definition": "cut"
+    },
+    "267": {
+        "kana": "確か",
+        "romaji": "",
+        "definition": "sure"
+    },
+    "268": {
+        "kana": "見る",
+        "romaji": "",
+        "definition": "watch"
+    },
+    "269": {
+        "kana": "カラー",
+        "romaji": "",
+        "definition": "color"
+    },
+    "270": {
+        "kana": "顔",
+        "romaji": "",
+        "definition": "face"
+    },
+    "271": {
+        "kana": "木材",
+        "romaji": "",
+        "definition": "wood"
+    },
+    "272": {
+        "kana": "メイン",
+        "romaji": "",
+        "definition": "main"
+    },
+    "273": {
+        "kana": "オープン",
+        "romaji": "",
+        "definition": "open"
+    },
+    "274": {
+        "kana": "見える",
+        "romaji": "",
+        "definition": "seem"
+    },
+    "275": {
+        "kana": "一緒に",
+        "romaji": "",
+        "definition": "together"
+    },
+    "276": {
+        "kana": "次",
+        "romaji": "",
+        "definition": "next"
+    },
+    "277": {
+        "kana": "白",
+        "romaji": "",
+        "definition": "white"
+    },
+    "278": {
+        "kana": "子どもたち",
+        "romaji": "",
+        "definition": "children"
+    },
+    "279": {
+        "kana": "始まる",
+        "romaji": "",
+        "definition": "begin"
+    },
+    "280": {
+        "kana": "だ",
+        "romaji": "",
+        "definition": "got"
+    },
+    "281": {
+        "kana": "歩く",
+        "romaji": "",
+        "definition": "walk"
+    },
+    "282": {
+        "kana": "例",
+        "romaji": "",
+        "definition": "example"
+    },
+    "283": {
+        "kana": "和らげる",
+        "romaji": "",
+        "definition": "ease"
+    },
+    "284": {
+        "kana": "紙",
+        "romaji": "",
+        "definition": "paper"
+    },
+    "285": {
+        "kana": "グループ",
+        "romaji": "",
+        "definition": "group"
+    },
+    "286": {
+        "kana": "常に",
+        "romaji": "",
+        "definition": "always"
+    },
+    "287": {
+        "kana": "音楽",
+        "romaji": "",
+        "definition": "music"
+    },
+    "288": {
+        "kana": "それらの",
+        "romaji": "",
+        "definition": "those"
+    },
+    "289": {
+        "kana": "両方",
+        "romaji": "",
+        "definition": "both"
+    },
+    "290": {
+        "kana": "マーク",
+        "romaji": "",
+        "definition": "mark"
+    },
+    "291": {
+        "kana": "しばしば",
+        "romaji": "",
+        "definition": "often"
+    },
+    "292": {
+        "kana": "手紙",
+        "romaji": "",
+        "definition": "letter"
+    },
+    "293": {
+        "kana": "まで、",
+        "romaji": "",
+        "definition": "until"
+    },
+    "294": {
+        "kana": "マイル",
+        "romaji": "",
+        "definition": "mile"
+    },
+    "295": {
+        "kana": "川",
+        "romaji": "",
+        "definition": "river"
+    },
+    "296": {
+        "kana": "カー",
+        "romaji": "",
+        "definition": "car"
+    },
+    "297": {
+        "kana": "フィート",
+        "romaji": "",
+        "definition": "feet"
+    },
+    "298": {
+        "kana": "介護",
+        "romaji": "",
+        "definition": "care"
+    },
+    "299": {
+        "kana": "第2",
+        "romaji": "",
+        "definition": "second"
+    },
+    "300": {
+        "kana": "十分な",
+        "romaji": "",
+        "definition": "enough"
+    },
+    "301": {
+        "kana": "平野",
+        "romaji": "",
+        "definition": "plain"
+    },
+    "302": {
+        "kana": "女の子",
+        "romaji": "",
+        "definition": "girl"
+    },
+    "303": {
+        "kana": "いつもの",
+        "romaji": "",
+        "definition": "usual"
+    },
+    "304": {
+        "kana": "若い",
+        "romaji": "",
+        "definition": "young"
+    },
+    "305": {
+        "kana": "レディー",
+        "romaji": "",
+        "definition": "ready"
+    },
+    "306": {
+        "kana": "上記",
+        "romaji": "",
+        "definition": "above"
+    },
+    "307": {
+        "kana": "今までに",
+        "romaji": "",
+        "definition": "ever"
+    },
+    "308": {
+        "kana": "赤",
+        "romaji": "",
+        "definition": "red"
+    },
+    "309": {
+        "kana": "リスト",
+        "romaji": "",
+        "definition": "list"
+    },
+    "310": {
+        "kana": "しかし",
+        "romaji": "",
+        "definition": "though"
+    },
+    "311": {
+        "kana": "感じる",
+        "romaji": "",
+        "definition": "feel"
+    },
+    "312": {
+        "kana": "トーク",
+        "romaji": "",
+        "definition": "talk"
+    },
+    "313": {
+        "kana": "鳥",
+        "romaji": "",
+        "definition": "bird"
+    },
+    "314": {
+        "kana": "すぐに",
+        "romaji": "",
+        "definition": "soon"
+    },
+    "315": {
+        "kana": "ボディ",
+        "romaji": "",
+        "definition": "body"
+    },
+    "316": {
+        "kana": "犬",
+        "romaji": "",
+        "definition": "dog"
+    },
+    "317": {
+        "kana": "家族",
+        "romaji": "",
+        "definition": "family"
+    },
+    "318": {
+        "kana": "ダイレクト",
+        "romaji": "",
+        "definition": "direct"
+    },
+    "319": {
+        "kana": "ポーズ",
+        "romaji": "",
+        "definition": "pose"
+    },
+    "320": {
+        "kana": "去る",
+        "romaji": "",
+        "definition": "leave"
+    },
+    "321": {
+        "kana": "歌",
+        "romaji": "",
+        "definition": "song"
+    },
+    "322": {
+        "kana": "測定",
+        "romaji": "",
+        "definition": "measure"
+    },
+    "323": {
+        "kana": "ドア",
+        "romaji": "",
+        "definition": "door"
+    },
+    "324": {
+        "kana": "製品",
+        "romaji": "",
+        "definition": "product"
+    },
+    "325": {
+        "kana": "黒",
+        "romaji": "",
+        "definition": "black"
+    },
+    "326": {
+        "kana": "短い",
+        "romaji": "",
+        "definition": "short"
+    },
+    "327": {
+        "kana": "数字",
+        "romaji": "",
+        "definition": "numeral"
+    },
+    "328": {
+        "kana": "クラス",
+        "romaji": "",
+        "definition": "class"
+    },
+    "329": {
+        "kana": "風",
+        "romaji": "",
+        "definition": "wind"
+    },
+    "330": {
+        "kana": "質問",
+        "romaji": "",
+        "definition": "question"
+    },
+    "331": {
+        "kana": "起こる",
+        "romaji": "",
+        "definition": "happen"
+    },
+    "332": {
+        "kana": "完全な",
+        "romaji": "",
+        "definition": "complete"
+    },
+    "333": {
+        "kana": "船",
+        "romaji": "",
+        "definition": "ship"
+    },
+    "334": {
+        "kana": "エリア",
+        "romaji": "",
+        "definition": "area"
+    },
+    "335": {
+        "kana": "半分",
+        "romaji": "",
+        "definition": "half"
+    },
+    "336": {
+        "kana": "岩",
+        "romaji": "",
+        "definition": "rock"
+    },
+    "337": {
+        "kana": "オーダー",
+        "romaji": "",
+        "definition": "order"
+    },
+    "338": {
+        "kana": "火災",
+        "romaji": "",
+        "definition": "fire"
+    },
+    "339": {
+        "kana": "南",
+        "romaji": "",
+        "definition": "south"
+    },
+    "340": {
+        "kana": "問題",
+        "romaji": "",
+        "definition": "problem"
+    },
+    "341": {
+        "kana": "作品",
+        "romaji": "",
+        "definition": "piece"
+    },
+    "342": {
+        "kana": "言われ",
+        "romaji": "",
+        "definition": "told"
+    },
+    "343": {
+        "kana": "知っていた",
+        "romaji": "",
+        "definition": "knew"
+    },
+    "344": {
+        "kana": "合格",
+        "romaji": "",
+        "definition": "pass"
+    },
+    "345": {
+        "kana": "以来",
+        "romaji": "",
+        "definition": "since"
+    },
+    "346": {
+        "kana": "トップ",
+        "romaji": "",
+        "definition": "top"
+    },
+    "347": {
+        "kana": "全体",
+        "romaji": "",
+        "definition": "whole"
+    },
+    "348": {
+        "kana": "王",
+        "romaji": "",
+        "definition": "king"
+    },
+    "349": {
+        "kana": "ストリート",
+        "romaji": "",
+        "definition": "street"
+    },
+    "350": {
+        "kana": "インチ",
+        "romaji": "",
+        "definition": "inch"
+    },
+    "351": {
+        "kana": "掛ける",
+        "romaji": "",
+        "definition": "multiply"
+    },
+    "352": {
+        "kana": "何も",
+        "romaji": "",
+        "definition": "nothing"
+    },
+    "353": {
+        "kana": "もちろん",
+        "romaji": "",
+        "definition": "course"
+    },
+    "354": {
+        "kana": "滞在",
+        "romaji": "",
+        "definition": "stay"
+    },
+    "355": {
+        "kana": "ホイール",
+        "romaji": "",
+        "definition": "wheel"
+    },
+    "356": {
+        "kana": "フル",
+        "romaji": "",
+        "definition": "full"
+    },
+    "357": {
+        "kana": "力",
+        "romaji": "",
+        "definition": "force"
+    },
+    "358": {
+        "kana": "ブルー",
+        "romaji": "",
+        "definition": "blue"
+    },
+    "359": {
+        "kana": "オブジェクト",
+        "romaji": "",
+        "definition": "object"
+    },
+    "360": {
+        "kana": "決定する",
+        "romaji": "",
+        "definition": "decide"
+    },
+    "361": {
+        "kana": "表面",
+        "romaji": "",
+        "definition": "surface"
+    },
+    "362": {
+        "kana": "深い",
+        "romaji": "",
+        "definition": "deep"
+    },
+    "363": {
+        "kana": "ムーン",
+        "romaji": "",
+        "definition": "moon"
+    },
+    "364": {
+        "kana": "島",
+        "romaji": "",
+        "definition": "island"
+    },
+    "365": {
+        "kana": "足",
+        "romaji": "",
+        "definition": "foot"
+    },
+    "366": {
+        "kana": "システム",
+        "romaji": "",
+        "definition": "system"
+    },
+    "367": {
+        "kana": "忙しい",
+        "romaji": "",
+        "definition": "busy"
+    },
+    "368": {
+        "kana": "テスト",
+        "romaji": "",
+        "definition": "test"
+    },
+    "369": {
+        "kana": "記録",
+        "romaji": "",
+        "definition": "record"
+    },
+    "370": {
+        "kana": "ボート",
+        "romaji": "",
+        "definition": "boat"
+    },
+    "371": {
+        "kana": "一般的な",
+        "romaji": "",
+        "definition": "common"
+    },
+    "372": {
+        "kana": "ゴールド",
+        "romaji": "",
+        "definition": "gold"
+    },
+    "373": {
+        "kana": "可能",
+        "romaji": "",
+        "definition": "possible"
+    },
+    "374": {
+        "kana": "飛行機",
+        "romaji": "",
+        "definition": "plane"
+    },
+    "375": {
+        "kana": "代わり",
+        "romaji": "",
+        "definition": "stead"
+    },
+    "376": {
+        "kana": "ドライ",
+        "romaji": "",
+        "definition": "dry"
+    },
+    "377": {
+        "kana": "不思議",
+        "romaji": "",
+        "definition": "wonder"
+    },
+    "378": {
+        "kana": "笑い",
+        "romaji": "",
+        "definition": "laugh"
+    },
+    "379": {
+        "kana": "千の",
+        "romaji": "",
+        "definition": "thousand"
+    },
+    "380": {
+        "kana": "前",
+        "romaji": "",
+        "definition": "ago"
+    },
+    "381": {
+        "kana": "走った",
+        "romaji": "",
+        "definition": "ran"
+    },
+    "382": {
+        "kana": "チェック",
+        "romaji": "",
+        "definition": "check"
+    },
+    "383": {
+        "kana": "ゲーム",
+        "romaji": "",
+        "definition": "game"
+    },
+    "384": {
+        "kana": "形状",
+        "romaji": "",
+        "definition": "shape"
+    },
+    "385": {
+        "kana": "一致する",
+        "romaji": "",
+        "definition": "equate"
+    },
+    "386": {
+        "kana": "ホット",
+        "romaji": "",
+        "definition": "hot"
+    },
+    "387": {
+        "kana": "ミス",
+        "romaji": "",
+        "definition": "miss"
+    },
+    "388": {
+        "kana": "た",
+        "romaji": "",
+        "definition": "brought"
+    },
+    "389": {
+        "kana": "熱",
+        "romaji": "",
+        "definition": "heat"
+    },
+    "390": {
+        "kana": "雪",
+        "romaji": "",
+        "definition": "snow"
+    },
+    "391": {
+        "kana": "タイヤ",
+        "romaji": "",
+        "definition": "tire"
+    },
+    "392": {
+        "kana": "持って来る",
+        "romaji": "",
+        "definition": "bring"
+    },
+    "393": {
+        "kana": "はい",
+        "romaji": "",
+        "definition": "yes"
+    },
+    "394": {
+        "kana": "遠い",
+        "romaji": "",
+        "definition": "distant"
+    },
+    "395": {
+        "kana": "埋める",
+        "romaji": "",
+        "definition": "fill"
+    },
+    "396": {
+        "kana": "東",
+        "romaji": "",
+        "definition": "east"
+    },
+    "397": {
+        "kana": "ペイント",
+        "romaji": "",
+        "definition": "paint"
+    },
+    "398": {
+        "kana": "言語",
+        "romaji": "",
+        "definition": "language"
+    },
+    "399": {
+        "kana": "の間で",
+        "romaji": "",
+        "definition": "among"
+    },
+    "400": {
+        "kana": "ユニット",
+        "romaji": "",
+        "definition": "unit"
+    },
+    "401": {
+        "kana": "パワー",
+        "romaji": "",
+        "definition": "power"
+    },
+    "402": {
+        "kana": "町",
+        "romaji": "",
+        "definition": "town"
+    },
+    "403": {
+        "kana": "罰金",
+        "romaji": "",
+        "definition": "fine"
+    },
+    "404": {
+        "kana": "特定の",
+        "romaji": "",
+        "definition": "certain"
+    },
+    "405": {
+        "kana": "飛ぶ",
+        "romaji": "",
+        "definition": "fly"
+    },
+    "406": {
+        "kana": "落ちる",
+        "romaji": "",
+        "definition": "fall"
+    },
+    "407": {
+        "kana": "鉛",
+        "romaji": "",
+        "definition": "lead"
+    },
+    "408": {
+        "kana": "泣く",
+        "romaji": "",
+        "definition": "cry"
+    },
+    "409": {
+        "kana": "暗い",
+        "romaji": "",
+        "definition": "dark"
+    },
+    "410": {
+        "kana": "マシン",
+        "romaji": "",
+        "definition": "machine"
+    },
+    "411": {
+        "kana": "ノート",
+        "romaji": "",
+        "definition": "note"
+    },
+    "412": {
+        "kana": "待つ",
+        "romaji": "",
+        "definition": "wait"
+    },
+    "413": {
+        "kana": "計画",
+        "romaji": "",
+        "definition": "plan"
+    },
+    "414": {
+        "kana": "図",
+        "romaji": "",
+        "definition": "figure"
+    },
+    "415": {
+        "kana": "スター",
+        "romaji": "",
+        "definition": "star"
+    },
+    "416": {
+        "kana": "ボックス",
+        "romaji": "",
+        "definition": "box"
+    },
+    "417": {
+        "kana": "名詞",
+        "romaji": "",
+        "definition": "noun"
+    },
+    "418": {
+        "kana": "フィールド",
+        "romaji": "",
+        "definition": "field"
+    },
+    "419": {
+        "kana": "残り",
+        "romaji": "",
+        "definition": "rest"
+    },
+    "420": {
+        "kana": "正しい",
+        "romaji": "",
+        "definition": "correct"
+    },
+    "421": {
+        "kana": "できる",
+        "romaji": "",
+        "definition": "able"
+    },
+    "422": {
+        "kana": "ポンド",
+        "romaji": "",
+        "definition": "pound"
+    },
+    "423": {
+        "kana": "終わった",
+        "romaji": "",
+        "definition": "done"
+    },
+    "424": {
+        "kana": "美しさ",
+        "romaji": "",
+        "definition": "beauty"
+    },
+    "425": {
+        "kana": "ドライブ",
+        "romaji": "",
+        "definition": "drive"
+    },
+    "426": {
+        "kana": "立っていた",
+        "romaji": "",
+        "definition": "stood"
+    },
+    "427": {
+        "kana": "含む",
+        "romaji": "",
+        "definition": "contain"
+    },
+    "428": {
+        "kana": "フロント",
+        "romaji": "",
+        "definition": "front"
+    },
+    "429": {
+        "kana": "教える",
+        "romaji": "",
+        "definition": "teach"
+    },
+    "430": {
+        "kana": "週",
+        "romaji": "",
+        "definition": "week"
+    },
+    "431": {
+        "kana": "ファイナル",
+        "romaji": "",
+        "definition": "final"
+    },
+    "432": {
+        "kana": "与えた",
+        "romaji": "",
+        "definition": "gave"
+    },
+    "433": {
+        "kana": "緑",
+        "romaji": "",
+        "definition": "green"
+    },
+    "434": {
+        "kana": "ああ",
+        "romaji": "",
+        "definition": "oh"
+    },
+    "435": {
+        "kana": "クイック",
+        "romaji": "",
+        "definition": "quick"
+    },
+    "436": {
+        "kana": "開発する",
+        "romaji": "",
+        "definition": "develop"
+    },
+    "437": {
+        "kana": "海",
+        "romaji": "",
+        "definition": "ocean"
+    },
+    "438": {
+        "kana": "暖かい",
+        "romaji": "",
+        "definition": "warm"
+    },
+    "439": {
+        "kana": "無料で",
+        "romaji": "",
+        "definition": "free"
+    },
+    "440": {
+        "kana": "分",
+        "romaji": "",
+        "definition": "minute"
+    },
+    "441": {
+        "kana": "強い",
+        "romaji": "",
+        "definition": "strong"
+    },
+    "442": {
+        "kana": "特別",
+        "romaji": "",
+        "definition": "special"
+    },
+    "443": {
+        "kana": "心",
+        "romaji": "",
+        "definition": "mind"
+    },
+    "444": {
+        "kana": "背後に",
+        "romaji": "",
+        "definition": "behind"
+    },
+    "445": {
+        "kana": "明確な",
+        "romaji": "",
+        "definition": "clear"
+    },
+    "446": {
+        "kana": "テール",
+        "romaji": "",
+        "definition": "tail"
+    },
+    "447": {
+        "kana": "作る",
+        "romaji": "",
+        "definition": "produce"
+    },
+    "448": {
+        "kana": "事実",
+        "romaji": "",
+        "definition": "fact"
+    },
+    "449": {
+        "kana": "スペース",
+        "romaji": "",
+        "definition": "space"
+    },
+    "450": {
+        "kana": "聞いた",
+        "romaji": "",
+        "definition": "heard"
+    },
+    "451": {
+        "kana": "ベスト",
+        "romaji": "",
+        "definition": "best"
+    },
+    "452": {
+        "kana": "時間",
+        "romaji": "",
+        "definition": "hour"
+    },
+    "453": {
+        "kana": "良い",
+        "romaji": "",
+        "definition": "better"
+    },
+    "454": {
+        "kana": "真の",
+        "romaji": "",
+        "definition": "TRUE"
+    },
+    "455": {
+        "kana": "間に",
+        "romaji": "",
+        "definition": "during"
+    },
+    "456": {
+        "kana": "百",
+        "romaji": "",
+        "definition": "hundred"
+    },
+    "457": {
+        "kana": "五",
+        "romaji": "",
+        "definition": "five"
+    },
+    "458": {
+        "kana": "覚えている",
+        "romaji": "",
+        "definition": "remember"
+    },
+    "459": {
+        "kana": "ステップ",
+        "romaji": "",
+        "definition": "step"
+    },
+    "460": {
+        "kana": "早い",
+        "romaji": "",
+        "definition": "early"
+    },
+    "461": {
+        "kana": "ホールド",
+        "romaji": "",
+        "definition": "hold"
+    },
+    "462": {
+        "kana": "西",
+        "romaji": "",
+        "definition": "west"
+    },
+    "463": {
+        "kana": "地面",
+        "romaji": "",
+        "definition": "ground"
+    },
+    "464": {
+        "kana": "関心",
+        "romaji": "",
+        "definition": "interest"
+    },
+    "465": {
+        "kana": "リーチ",
+        "romaji": "",
+        "definition": "reach"
+    },
+    "466": {
+        "kana": "速い",
+        "romaji": "",
+        "definition": "fast"
+    },
+    "467": {
+        "kana": "動詞",
+        "romaji": "",
+        "definition": "verb"
+    },
+    "468": {
+        "kana": "歌う",
+        "romaji": "",
+        "definition": "sing"
+    },
+    "469": {
+        "kana": "聞く",
+        "romaji": "",
+        "definition": "listen"
+    },
+    "470": {
+        "kana": "六",
+        "romaji": "",
+        "definition": "six"
+    },
+    "471": {
+        "kana": "テーブル",
+        "romaji": "",
+        "definition": "table"
+    },
+    "472": {
+        "kana": "旅行",
+        "romaji": "",
+        "definition": "travel"
+    },
+    "473": {
+        "kana": "レス",
+        "romaji": "",
+        "definition": "less"
+    },
+    "474": {
+        "kana": "朝",
+        "romaji": "",
+        "definition": "morning"
+    },
+    "475": {
+        "kana": "十",
+        "romaji": "",
+        "definition": "ten"
+    },
+    "476": {
+        "kana": "シンプル",
+        "romaji": "",
+        "definition": "simple"
+    },
+    "477": {
+        "kana": "いくつかの",
+        "romaji": "",
+        "definition": "several"
+    },
+    "478": {
+        "kana": "母音",
+        "romaji": "",
+        "definition": "vowel"
+    },
+    "479": {
+        "kana": "の方へ",
+        "romaji": "",
+        "definition": "toward"
+    },
+    "480": {
+        "kana": "戦争",
+        "romaji": "",
+        "definition": "war"
+    },
+    "481": {
+        "kana": "産む",
+        "romaji": "",
+        "definition": "lay"
+    },
+    "482": {
+        "kana": "に対する",
+        "romaji": "",
+        "definition": "against"
+    },
+    "483": {
+        "kana": "パターン",
+        "romaji": "",
+        "definition": "pattern"
+    },
+    "484": {
+        "kana": "遅い",
+        "romaji": "",
+        "definition": "slow"
+    },
+    "485": {
+        "kana": "センター",
+        "romaji": "",
+        "definition": "center"
+    },
+    "486": {
+        "kana": "愛",
+        "romaji": "",
+        "definition": "love"
+    },
+    "487": {
+        "kana": "人",
+        "romaji": "",
+        "definition": "person"
+    },
+    "488": {
+        "kana": "マネー",
+        "romaji": "",
+        "definition": "money"
+    },
+    "489": {
+        "kana": "サーブ",
+        "romaji": "",
+        "definition": "serve"
+    },
+    "490": {
+        "kana": "見える",
+        "romaji": "",
+        "definition": "appear"
+    },
+    "491": {
+        "kana": "道路",
+        "romaji": "",
+        "definition": "road"
+    },
+    "492": {
+        "kana": "マップ",
+        "romaji": "",
+        "definition": "map"
+    },
+    "493": {
+        "kana": "雨",
+        "romaji": "",
+        "definition": "rain"
+    },
+    "494": {
+        "kana": "ルール",
+        "romaji": "",
+        "definition": "rule"
+    },
+    "495": {
+        "kana": "支配する",
+        "romaji": "",
+        "definition": "govern"
+    },
+    "496": {
+        "kana": "引っ張る",
+        "romaji": "",
+        "definition": "pull"
+    },
+    "497": {
+        "kana": "寒い",
+        "romaji": "",
+        "definition": "cold"
+    },
+    "498": {
+        "kana": "予告",
+        "romaji": "",
+        "definition": "notice"
+    },
+    "499": {
+        "kana": "声",
+        "romaji": "",
+        "definition": "voice"
+    },
+    "500": {
+        "kana": "エネルギー",
+        "romaji": "",
+        "definition": "energy"
+    },
+    "501": {
+        "kana": "狩り",
+        "romaji": "",
+        "definition": "hunt"
+    },
+    "502": {
+        "kana": "ありそうな",
+        "romaji": "",
+        "definition": "probable"
+    },
+    "503": {
+        "kana": "ベッド",
+        "romaji": "",
+        "definition": "bed"
+    },
+    "504": {
+        "kana": "兄",
+        "romaji": "",
+        "definition": "brother"
+    },
+    "505": {
+        "kana": "卵",
+        "romaji": "",
+        "definition": "egg"
+    },
+    "506": {
+        "kana": "乗る",
+        "romaji": "",
+        "definition": "ride"
+    },
+    "507": {
+        "kana": "セル",
+        "romaji": "",
+        "definition": "cell"
+    },
+    "508": {
+        "kana": "信じる",
+        "romaji": "",
+        "definition": "believe"
+    },
+    "509": {
+        "kana": "たぶん",
+        "romaji": "",
+        "definition": "perhaps"
+    },
+    "510": {
+        "kana": "選ぶ",
+        "romaji": "",
+        "definition": "pick"
+    },
+    "511": {
+        "kana": "突然の",
+        "romaji": "",
+        "definition": "sudden"
+    },
+    "512": {
+        "kana": "カウント",
+        "romaji": "",
+        "definition": "count"
+    },
+    "513": {
+        "kana": "広場",
+        "romaji": "",
+        "definition": "square"
+    },
+    "514": {
+        "kana": "理由",
+        "romaji": "",
+        "definition": "reason"
+    },
+    "515": {
+        "kana": "長さ",
+        "romaji": "",
+        "definition": "length"
+    },
+    "516": {
+        "kana": "表す",
+        "romaji": "",
+        "definition": "represent"
+    },
+    "517": {
+        "kana": "アート",
+        "romaji": "",
+        "definition": "art"
+    },
+    "518": {
+        "kana": "テーマ",
+        "romaji": "",
+        "definition": "subject"
+    },
+    "519": {
+        "kana": "地域",
+        "romaji": "",
+        "definition": "region"
+    },
+    "520": {
+        "kana": "サイズ",
+        "romaji": "",
+        "definition": "size"
+    },
+    "521": {
+        "kana": "変える",
+        "romaji": "",
+        "definition": "vary"
+    },
+    "522": {
+        "kana": "落ち着く",
+        "romaji": "",
+        "definition": "settle"
+    },
+    "523": {
+        "kana": "話す",
+        "romaji": "",
+        "definition": "speak"
+    },
+    "524": {
+        "kana": "重さ",
+        "romaji": "",
+        "definition": "weight"
+    },
+    "525": {
+        "kana": "一般",
+        "romaji": "",
+        "definition": "general"
+    },
+    "526": {
+        "kana": "アイス",
+        "romaji": "",
+        "definition": "ice"
+    },
+    "527": {
+        "kana": "問題",
+        "romaji": "",
+        "definition": "matter"
+    },
+    "528": {
+        "kana": "サークル",
+        "romaji": "",
+        "definition": "circle"
+    },
+    "529": {
+        "kana": "ペア",
+        "romaji": "",
+        "definition": "pair"
+    },
+    "530": {
+        "kana": "含める",
+        "romaji": "",
+        "definition": "include"
+    },
+    "531": {
+        "kana": "分割",
+        "romaji": "",
+        "definition": "divide"
+    },
+    "532": {
+        "kana": "音節",
+        "romaji": "",
+        "definition": "syllable"
+    },
+    "533": {
+        "kana": "フェルト",
+        "romaji": "",
+        "definition": "felt"
+    },
+    "534": {
+        "kana": "壮大な",
+        "romaji": "",
+        "definition": "grand"
+    },
+    "535": {
+        "kana": "ボール",
+        "romaji": "",
+        "definition": "ball"
+    },
+    "536": {
+        "kana": "まだ",
+        "romaji": "",
+        "definition": "yet"
+    },
+    "537": {
+        "kana": "波",
+        "romaji": "",
+        "definition": "wave"
+    },
+    "538": {
+        "kana": "ドロップ",
+        "romaji": "",
+        "definition": "drop"
+    },
+    "539": {
+        "kana": "心",
+        "romaji": "",
+        "definition": "heart"
+    },
+    "540": {
+        "kana": "AM",
+        "romaji": "",
+        "definition": "am"
+    },
+    "541": {
+        "kana": "現在",
+        "romaji": "",
+        "definition": "present"
+    },
+    "542": {
+        "kana": "重い",
+        "romaji": "",
+        "definition": "heavy"
+    },
+    "543": {
+        "kana": "ダンス",
+        "romaji": "",
+        "definition": "dance"
+    },
+    "544": {
+        "kana": "エンジン",
+        "romaji": "",
+        "definition": "engine"
+    },
+    "545": {
+        "kana": "ポジション",
+        "romaji": "",
+        "definition": "position"
+    },
+    "546": {
+        "kana": "アーム",
+        "romaji": "",
+        "definition": "arm"
+    },
+    "547": {
+        "kana": "広い",
+        "romaji": "",
+        "definition": "wide"
+    },
+    "548": {
+        "kana": "帆",
+        "romaji": "",
+        "definition": "sail"
+    },
+    "549": {
+        "kana": "材料",
+        "romaji": "",
+        "definition": "material"
+    },
+    "550": {
+        "kana": "分数",
+        "romaji": "",
+        "definition": "fraction"
+    },
+    "551": {
+        "kana": "森",
+        "romaji": "",
+        "definition": "forest"
+    },
+    "552": {
+        "kana": "座る",
+        "romaji": "",
+        "definition": "sit"
+    },
+    "553": {
+        "kana": "レース",
+        "romaji": "",
+        "definition": "race"
+    },
+    "554": {
+        "kana": "窓",
+        "romaji": "",
+        "definition": "window"
+    },
+    "555": {
+        "kana": "店",
+        "romaji": "",
+        "definition": "store"
+    },
+    "556": {
+        "kana": "夏",
+        "romaji": "",
+        "definition": "summer"
+    },
+    "557": {
+        "kana": "列車",
+        "romaji": "",
+        "definition": "train"
+    },
+    "558": {
+        "kana": "スリープ",
+        "romaji": "",
+        "definition": "sleep"
+    },
+    "559": {
+        "kana": "証明する",
+        "romaji": "",
+        "definition": "prove"
+    },
+    "560": {
+        "kana": "ローン",
+        "romaji": "",
+        "definition": "lone"
+    },
+    "561": {
+        "kana": "レッグ",
+        "romaji": "",
+        "definition": "leg"
+    },
+    "562": {
+        "kana": "エクササイズ",
+        "romaji": "",
+        "definition": "exercise"
+    },
+    "563": {
+        "kana": "壁",
+        "romaji": "",
+        "definition": "wall"
+    },
+    "564": {
+        "kana": "キャッチ",
+        "romaji": "",
+        "definition": "catch"
+    },
+    "565": {
+        "kana": "マウント",
+        "romaji": "",
+        "definition": "mount"
+    },
+    "566": {
+        "kana": "希望",
+        "romaji": "",
+        "definition": "wish"
+    },
+    "567": {
+        "kana": "空",
+        "romaji": "",
+        "definition": "sky"
+    },
+    "568": {
+        "kana": "ボード",
+        "romaji": "",
+        "definition": "board"
+    },
+    "569": {
+        "kana": "喜び",
+        "romaji": "",
+        "definition": "joy"
+    },
+    "570": {
+        "kana": "冬",
+        "romaji": "",
+        "definition": "winter"
+    },
+    "571": {
+        "kana": "土",
+        "romaji": "",
+        "definition": "sat"
+    },
+    "572": {
+        "kana": "書かれた",
+        "romaji": "",
+        "definition": "written"
+    },
+    "573": {
+        "kana": "ワイルド",
+        "romaji": "",
+        "definition": "wild"
+    },
+    "574": {
+        "kana": "楽器",
+        "romaji": "",
+        "definition": "instrument"
+    },
+    "575": {
+        "kana": "保管",
+        "romaji": "",
+        "definition": "kept"
+    },
+    "576": {
+        "kana": "ガラス",
+        "romaji": "",
+        "definition": "glass"
+    },
+    "577": {
+        "kana": "草",
+        "romaji": "",
+        "definition": "grass"
+    },
+    "578": {
+        "kana": "乳牛",
+        "romaji": "",
+        "definition": "cow"
+    },
+    "579": {
+        "kana": "仕事",
+        "romaji": "",
+        "definition": "job"
+    },
+    "580": {
+        "kana": "エッジ",
+        "romaji": "",
+        "definition": "edge"
+    },
+    "581": {
+        "kana": "看板",
+        "romaji": "",
+        "definition": "sign"
+    },
+    "582": {
+        "kana": "訪問",
+        "romaji": "",
+        "definition": "visit"
+    },
+    "583": {
+        "kana": "過去",
+        "romaji": "",
+        "definition": "past"
+    },
+    "584": {
+        "kana": "ソフト",
+        "romaji": "",
+        "definition": "soft"
+    },
+    "585": {
+        "kana": "楽しい",
+        "romaji": "",
+        "definition": "fun"
+    },
+    "586": {
+        "kana": "明るい",
+        "romaji": "",
+        "definition": "bright"
+    },
+    "587": {
+        "kana": "ガス",
+        "romaji": "",
+        "definition": "gas"
+    },
+    "588": {
+        "kana": "天候",
+        "romaji": "",
+        "definition": "weather"
+    },
+    "589": {
+        "kana": "月",
+        "romaji": "",
+        "definition": "month"
+    },
+    "590": {
+        "kana": "万",
+        "romaji": "",
+        "definition": "million"
+    },
+    "591": {
+        "kana": "クマ",
+        "romaji": "",
+        "definition": "bear"
+    },
+    "592": {
+        "kana": "仕上げ",
+        "romaji": "",
+        "definition": "finish"
+    },
+    "593": {
+        "kana": "幸せな",
+        "romaji": "",
+        "definition": "happy"
+    },
+    "594": {
+        "kana": "希望",
+        "romaji": "",
+        "definition": "hope"
+    },
+    "595": {
+        "kana": "花",
+        "romaji": "",
+        "definition": "flower"
+    },
+    "596": {
+        "kana": "衣服を着せる",
+        "romaji": "",
+        "definition": "clothe"
+    },
+    "597": {
+        "kana": "奇妙な",
+        "romaji": "",
+        "definition": "strange"
+    },
+    "598": {
+        "kana": "いなくなった",
+        "romaji": "",
+        "definition": "gone"
+    },
+    "599": {
+        "kana": "トレード",
+        "romaji": "",
+        "definition": "trade"
+    },
+    "600": {
+        "kana": "メロディー",
+        "romaji": "",
+        "definition": "melody"
+    },
+    "601": {
+        "kana": "旅",
+        "romaji": "",
+        "definition": "trip"
+    },
+    "602": {
+        "kana": "オフィス",
+        "romaji": "",
+        "definition": "office"
+    },
+    "603": {
+        "kana": "受け取る",
+        "romaji": "",
+        "definition": "receive"
+    },
+    "604": {
+        "kana": "行",
+        "romaji": "",
+        "definition": "row"
+    },
+    "605": {
+        "kana": "口",
+        "romaji": "",
+        "definition": "mouth"
+    },
+    "606": {
+        "kana": "正確な",
+        "romaji": "",
+        "definition": "exact"
+    },
+    "607": {
+        "kana": "シンボル",
+        "romaji": "",
+        "definition": "symbol"
+    },
+    "608": {
+        "kana": "死ぬ",
+        "romaji": "",
+        "definition": "die"
+    },
+    "609": {
+        "kana": "最低",
+        "romaji": "",
+        "definition": "least"
+    },
+    "610": {
+        "kana": "トラブル",
+        "romaji": "",
+        "definition": "trouble"
+    },
+    "611": {
+        "kana": "シャウト",
+        "romaji": "",
+        "definition": "shout"
+    },
+    "612": {
+        "kana": "ただし",
+        "romaji": "",
+        "definition": "except"
+    },
+    "613": {
+        "kana": "書いた",
+        "romaji": "",
+        "definition": "wrote"
+    },
+    "614": {
+        "kana": "シード",
+        "romaji": "",
+        "definition": "seed"
+    },
+    "615": {
+        "kana": "トーン",
+        "romaji": "",
+        "definition": "tone"
+    },
+    "616": {
+        "kana": "参加する",
+        "romaji": "",
+        "definition": "join"
+    },
+    "617": {
+        "kana": "提案する",
+        "romaji": "",
+        "definition": "suggest"
+    },
+    "618": {
+        "kana": "クリーン",
+        "romaji": "",
+        "definition": "clean"
+    },
+    "619": {
+        "kana": "ブレーク",
+        "romaji": "",
+        "definition": "break"
+    },
+    "620": {
+        "kana": "女性",
+        "romaji": "",
+        "definition": "lady"
+    },
+    "621": {
+        "kana": "庭",
+        "romaji": "",
+        "definition": "yard"
+    },
+    "622": {
+        "kana": "上昇",
+        "romaji": "",
+        "definition": "rise"
+    },
+    "623": {
+        "kana": "悪い",
+        "romaji": "",
+        "definition": "bad"
+    },
+    "624": {
+        "kana": "打撃",
+        "romaji": "",
+        "definition": "blow"
+    },
+    "625": {
+        "kana": "オイル",
+        "romaji": "",
+        "definition": "oil"
+    },
+    "626": {
+        "kana": "血",
+        "romaji": "",
+        "definition": "blood"
+    },
+    "627": {
+        "kana": "触れる",
+        "romaji": "",
+        "definition": "touch"
+    },
+    "628": {
+        "kana": "成長した",
+        "romaji": "",
+        "definition": "grew"
+    },
+    "629": {
+        "kana": "セント",
+        "romaji": "",
+        "definition": "cent"
+    },
+    "630": {
+        "kana": "ミックス",
+        "romaji": "",
+        "definition": "mix"
+    },
+    "631": {
+        "kana": "チーム",
+        "romaji": "",
+        "definition": "team"
+    },
+    "632": {
+        "kana": "ワイヤー",
+        "romaji": "",
+        "definition": "wire"
+    },
+    "633": {
+        "kana": "コスト",
+        "romaji": "",
+        "definition": "cost"
+    },
+    "634": {
+        "kana": "失われた",
+        "romaji": "",
+        "definition": "lost"
+    },
+    "635": {
+        "kana": "ブラウン",
+        "romaji": "",
+        "definition": "brown"
+    },
+    "636": {
+        "kana": "着用",
+        "romaji": "",
+        "definition": "wear"
+    },
+    "637": {
+        "kana": "庭",
+        "romaji": "",
+        "definition": "garden"
+    },
+    "638": {
+        "kana": "等しい",
+        "romaji": "",
+        "definition": "equal"
+    },
+    "639": {
+        "kana": "送信された",
+        "romaji": "",
+        "definition": "sent"
+    },
+    "640": {
+        "kana": "選ぶ",
+        "romaji": "",
+        "definition": "choose"
+    },
+    "641": {
+        "kana": "落ちた",
+        "romaji": "",
+        "definition": "fell"
+    },
+    "642": {
+        "kana": "フィット",
+        "romaji": "",
+        "definition": "fit"
+    },
+    "643": {
+        "kana": "流れ",
+        "romaji": "",
+        "definition": "flow"
+    },
+    "644": {
+        "kana": "フェア",
+        "romaji": "",
+        "definition": "fair"
+    },
+    "645": {
+        "kana": "銀行",
+        "romaji": "",
+        "definition": "bank"
+    },
+    "646": {
+        "kana": "集める",
+        "romaji": "",
+        "definition": "collect"
+    },
+    "647": {
+        "kana": "保存",
+        "romaji": "",
+        "definition": "save"
+    },
+    "648": {
+        "kana": "コントロール",
+        "romaji": "",
+        "definition": "control"
+    },
+    "649": {
+        "kana": "進",
+        "romaji": "",
+        "definition": "decimal"
+    },
+    "650": {
+        "kana": "耳",
+        "romaji": "",
+        "definition": "ear"
+    },
+    "651": {
+        "kana": "ほかに",
+        "romaji": "",
+        "definition": "else"
+    },
+    "652": {
+        "kana": "かなり",
+        "romaji": "",
+        "definition": "quite"
+    },
+    "653": {
+        "kana": "壊した",
+        "romaji": "",
+        "definition": "broke"
+    },
+    "654": {
+        "kana": "ケース",
+        "romaji": "",
+        "definition": "case"
+    },
+    "655": {
+        "kana": "ミドル",
+        "romaji": "",
+        "definition": "middle"
+    },
+    "656": {
+        "kana": "殺す",
+        "romaji": "",
+        "definition": "kill"
+    },
+    "657": {
+        "kana": "息子",
+        "romaji": "",
+        "definition": "son"
+    },
+    "658": {
+        "kana": "湖",
+        "romaji": "",
+        "definition": "lake"
+    },
+    "659": {
+        "kana": "瞬間",
+        "romaji": "",
+        "definition": "moment"
+    },
+    "660": {
+        "kana": "スケール",
+        "romaji": "",
+        "definition": "scale"
+    },
+    "661": {
+        "kana": "騒々しい",
+        "romaji": "",
+        "definition": "loud"
+    },
+    "662": {
+        "kana": "春",
+        "romaji": "",
+        "definition": "spring"
+    },
+    "663": {
+        "kana": "観察する",
+        "romaji": "",
+        "definition": "observe"
+    },
+    "664": {
+        "kana": "子ども",
+        "romaji": "",
+        "definition": "child"
+    },
+    "665": {
+        "kana": "ストレート",
+        "romaji": "",
+        "definition": "straight"
+    },
+    "666": {
+        "kana": "子音",
+        "romaji": "",
+        "definition": "consonant"
+    },
+    "667": {
+        "kana": "国家",
+        "romaji": "",
+        "definition": "nation"
+    },
+    "668": {
+        "kana": "辞書",
+        "romaji": "",
+        "definition": "dictionary"
+    },
+    "669": {
+        "kana": "ミルク",
+        "romaji": "",
+        "definition": "milk"
+    },
+    "670": {
+        "kana": "スピード",
+        "romaji": "",
+        "definition": "speed"
+    },
+    "671": {
+        "kana": "方法",
+        "romaji": "",
+        "definition": "method"
+    },
+    "672": {
+        "kana": "オルガン",
+        "romaji": "",
+        "definition": "organ"
+    },
+    "673": {
+        "kana": "支払い",
+        "romaji": "",
+        "definition": "pay"
+    },
+    "674": {
+        "kana": "年齢",
+        "romaji": "",
+        "definition": "age"
+    },
+    "675": {
+        "kana": "セクション",
+        "romaji": "",
+        "definition": "section"
+    },
+    "676": {
+        "kana": "ドレス",
+        "romaji": "",
+        "definition": "dress"
+    },
+    "677": {
+        "kana": "クラウド",
+        "romaji": "",
+        "definition": "cloud"
+    },
+    "678": {
+        "kana": "驚き",
+        "romaji": "",
+        "definition": "surprise"
+    },
+    "679": {
+        "kana": "静かな",
+        "romaji": "",
+        "definition": "quiet"
+    },
+    "680": {
+        "kana": "石",
+        "romaji": "",
+        "definition": "stone"
+    },
+    "681": {
+        "kana": "小さな",
+        "romaji": "",
+        "definition": "tiny"
+    },
+    "682": {
+        "kana": "登る",
+        "romaji": "",
+        "definition": "climb"
+    },
+    "683": {
+        "kana": "涼しい",
+        "romaji": "",
+        "definition": "cool"
+    },
+    "684": {
+        "kana": "デザイン",
+        "romaji": "",
+        "definition": "design"
+    },
+    "685": {
+        "kana": "貧しい",
+        "romaji": "",
+        "definition": "poor"
+    },
+    "686": {
+        "kana": "たくさん",
+        "romaji": "",
+        "definition": "lot"
+    },
+    "687": {
+        "kana": "実験",
+        "romaji": "",
+        "definition": "experiment"
+    },
+    "688": {
+        "kana": "ボトム",
+        "romaji": "",
+        "definition": "bottom"
+    },
+    "689": {
+        "kana": "キー",
+        "romaji": "",
+        "definition": "key"
+    },
+    "690": {
+        "kana": "鉄",
+        "romaji": "",
+        "definition": "iron"
+    },
+    "691": {
+        "kana": "シングル",
+        "romaji": "",
+        "definition": "single"
+    },
+    "692": {
+        "kana": "スティック",
+        "romaji": "",
+        "definition": "stick"
+    },
+    "693": {
+        "kana": "フラット",
+        "romaji": "",
+        "definition": "flat"
+    },
+    "694": {
+        "kana": "個の",
+        "romaji": "",
+        "definition": "twenty"
+    },
+    "695": {
+        "kana": "スキン",
+        "romaji": "",
+        "definition": "skin"
+    },
+    "696": {
+        "kana": "笑顔",
+        "romaji": "",
+        "definition": "smile"
+    },
+    "697": {
+        "kana": "しわ",
+        "romaji": "",
+        "definition": "crease"
+    },
+    "698": {
+        "kana": "穴",
+        "romaji": "",
+        "definition": "hole"
+    },
+    "699": {
+        "kana": "ジャンプ",
+        "romaji": "",
+        "definition": "jump"
+    },
+    "700": {
+        "kana": "赤ちゃん",
+        "romaji": "",
+        "definition": "baby"
+    },
+    "701": {
+        "kana": "人",
+        "romaji": "",
+        "definition": "eight"
+    },
+    "702": {
+        "kana": "村",
+        "romaji": "",
+        "definition": "village"
+    },
+    "703": {
+        "kana": "大会",
+        "romaji": "",
+        "definition": "meet"
+    },
+    "704": {
+        "kana": "ルート",
+        "romaji": "",
+        "definition": "root"
+    },
+    "705": {
+        "kana": "買う",
+        "romaji": "",
+        "definition": "buy"
+    },
+    "706": {
+        "kana": "上げる",
+        "romaji": "",
+        "definition": "raise"
+    },
+    "707": {
+        "kana": "解く",
+        "romaji": "",
+        "definition": "solve"
+    },
+    "708": {
+        "kana": "金属",
+        "romaji": "",
+        "definition": "metal"
+    },
+    "709": {
+        "kana": "かどうか",
+        "romaji": "",
+        "definition": "whether"
+    },
+    "710": {
+        "kana": "プッシュ",
+        "romaji": "",
+        "definition": "push"
+    },
+    "711": {
+        "kana": "7",
+        "romaji": "",
+        "definition": "seven"
+    },
+    "712": {
+        "kana": "パラグラフ",
+        "romaji": "",
+        "definition": "paragraph"
+    },
+    "713": {
+        "kana": "第3",
+        "romaji": "",
+        "definition": "third"
+    },
+    "714": {
+        "kana": "しなければならない",
+        "romaji": "",
+        "definition": "shall"
+    },
+    "715": {
+        "kana": "ハンドヘルド",
+        "romaji": "",
+        "definition": "held"
+    },
+    "716": {
+        "kana": "髪",
+        "romaji": "",
+        "definition": "hair"
+    },
+    "717": {
+        "kana": "説明する",
+        "romaji": "",
+        "definition": "describe"
+    },
+    "718": {
+        "kana": "料理人",
+        "romaji": "",
+        "definition": "cook"
+    },
+    "719": {
+        "kana": "床",
+        "romaji": "",
+        "definition": "floor"
+    },
+    "720": {
+        "kana": "どちら",
+        "romaji": "",
+        "definition": "either"
+    },
+    "721": {
+        "kana": "結果",
+        "romaji": "",
+        "definition": "result"
+    },
+    "722": {
+        "kana": "燃やす",
+        "romaji": "",
+        "definition": "burn"
+    },
+    "723": {
+        "kana": "丘",
+        "romaji": "",
+        "definition": "hill"
+    },
+    "724": {
+        "kana": "金庫",
+        "romaji": "",
+        "definition": "safe"
+    },
+    "725": {
+        "kana": "猫",
+        "romaji": "",
+        "definition": "cat"
+    },
+    "726": {
+        "kana": "世紀",
+        "romaji": "",
+        "definition": "century"
+    },
+    "727": {
+        "kana": "考える",
+        "romaji": "",
+        "definition": "consider"
+    },
+    "728": {
+        "kana": "タイプ",
+        "romaji": "",
+        "definition": "type"
+    },
+    "729": {
+        "kana": "法則",
+        "romaji": "",
+        "definition": "law"
+    },
+    "730": {
+        "kana": "ビット",
+        "romaji": "",
+        "definition": "bit"
+    },
+    "731": {
+        "kana": "海岸",
+        "romaji": "",
+        "definition": "coast"
+    },
+    "732": {
+        "kana": "コピー",
+        "romaji": "",
+        "definition": "copy"
+    },
+    "733": {
+        "kana": "フレーズ",
+        "romaji": "",
+        "definition": "phrase"
+    },
+    "734": {
+        "kana": "サイレント",
+        "romaji": "",
+        "definition": "silent"
+    },
+    "735": {
+        "kana": "背の高い",
+        "romaji": "",
+        "definition": "tall"
+    },
+    "736": {
+        "kana": "砂",
+        "romaji": "",
+        "definition": "sand"
+    },
+    "737": {
+        "kana": "土壌",
+        "romaji": "",
+        "definition": "soil"
+    },
+    "738": {
+        "kana": "ロール",
+        "romaji": "",
+        "definition": "roll"
+    },
+    "739": {
+        "kana": "温度",
+        "romaji": "",
+        "definition": "temperature"
+    },
+    "740": {
+        "kana": "指",
+        "romaji": "",
+        "definition": "finger"
+    },
+    "741": {
+        "kana": "業界",
+        "romaji": "",
+        "definition": "industry"
+    },
+    "742": {
+        "kana": "値",
+        "romaji": "",
+        "definition": "value"
+    },
+    "743": {
+        "kana": "戦い",
+        "romaji": "",
+        "definition": "fight"
+    },
+    "744": {
+        "kana": "うそ",
+        "romaji": "",
+        "definition": "lie"
+    },
+    "745": {
+        "kana": "ビート",
+        "romaji": "",
+        "definition": "beat"
+    },
+    "746": {
+        "kana": "エキサイト",
+        "romaji": "",
+        "definition": "excite"
+    },
+    "747": {
+        "kana": "ナチュラル",
+        "romaji": "",
+        "definition": "natural"
+    },
+    "748": {
+        "kana": "ビュー",
+        "romaji": "",
+        "definition": "view"
+    },
+    "749": {
+        "kana": "感覚",
+        "romaji": "",
+        "definition": "sense"
+    },
+    "750": {
+        "kana": "首都",
+        "romaji": "",
+        "definition": "capital"
+    },
+    "751": {
+        "kana": "ないでしょう",
+        "romaji": "",
+        "definition": "won’t"
+    },
+    "752": {
+        "kana": "椅子",
+        "romaji": "",
+        "definition": "chair"
+    },
+    "753": {
+        "kana": "危険",
+        "romaji": "",
+        "definition": "danger"
+    },
+    "754": {
+        "kana": "フルーツ",
+        "romaji": "",
+        "definition": "fruit"
+    },
+    "755": {
+        "kana": "金持ち",
+        "romaji": "",
+        "definition": "rich"
+    },
+    "756": {
+        "kana": "厚い",
+        "romaji": "",
+        "definition": "thick"
+    },
+    "757": {
+        "kana": "兵士",
+        "romaji": "",
+        "definition": "soldier"
+    },
+    "758": {
+        "kana": "プロセス",
+        "romaji": "",
+        "definition": "process"
+    },
+    "759": {
+        "kana": "操作する",
+        "romaji": "",
+        "definition": "operate"
+    },
+    "760": {
+        "kana": "練習",
+        "romaji": "",
+        "definition": "practice"
+    },
+    "761": {
+        "kana": "別",
+        "romaji": "",
+        "definition": "separate"
+    },
+    "762": {
+        "kana": "難しい",
+        "romaji": "",
+        "definition": "difficult"
+    },
+    "763": {
+        "kana": "医師",
+        "romaji": "",
+        "definition": "doctor"
+    },
+    "764": {
+        "kana": "どうぞ",
+        "romaji": "",
+        "definition": "please"
+    },
+    "765": {
+        "kana": "守る",
+        "romaji": "",
+        "definition": "protect"
+    },
+    "766": {
+        "kana": "正午",
+        "romaji": "",
+        "definition": "noon"
+    },
+    "767": {
+        "kana": "作物",
+        "romaji": "",
+        "definition": "crop"
+    },
+    "768": {
+        "kana": "モダン",
+        "romaji": "",
+        "definition": "modern"
+    },
+    "769": {
+        "kana": "要素",
+        "romaji": "",
+        "definition": "element"
+    },
+    "770": {
+        "kana": "ヒット",
+        "romaji": "",
+        "definition": "hit"
+    },
+    "771": {
+        "kana": "学生",
+        "romaji": "",
+        "definition": "student"
+    },
+    "772": {
+        "kana": "コーナー",
+        "romaji": "",
+        "definition": "corner"
+    },
+    "773": {
+        "kana": "パーティー",
+        "romaji": "",
+        "definition": "party"
+    },
+    "774": {
+        "kana": "サプライ",
+        "romaji": "",
+        "definition": "supply"
+    },
+    "775": {
+        "kana": "その",
+        "romaji": "",
+        "definition": "whose"
+    },
+    "776": {
+        "kana": "検索する",
+        "romaji": "",
+        "definition": "locate"
+    },
+    "777": {
+        "kana": "リング",
+        "romaji": "",
+        "definition": "ring"
+    },
+    "778": {
+        "kana": "キャラクター",
+        "romaji": "",
+        "definition": "character"
+    },
+    "779": {
+        "kana": "昆虫",
+        "romaji": "",
+        "definition": "insect"
+    },
+    "780": {
+        "kana": "キャッチ",
+        "romaji": "",
+        "definition": "caught"
+    },
+    "781": {
+        "kana": "期間",
+        "romaji": "",
+        "definition": "period"
+    },
+    "782": {
+        "kana": "示す",
+        "romaji": "",
+        "definition": "indicate"
+    },
+    "783": {
+        "kana": "ラジオ",
+        "romaji": "",
+        "definition": "radio"
+    },
+    "784": {
+        "kana": "スポーク",
+        "romaji": "",
+        "definition": "spoke"
+    },
+    "785": {
+        "kana": "アトム",
+        "romaji": "",
+        "definition": "atom"
+    },
+    "786": {
+        "kana": "人間",
+        "romaji": "",
+        "definition": "human"
+    },
+    "787": {
+        "kana": "歴史",
+        "romaji": "",
+        "definition": "history"
+    },
+    "788": {
+        "kana": "効果",
+        "romaji": "",
+        "definition": "effect"
+    },
+    "789": {
+        "kana": "エレクトリック",
+        "romaji": "",
+        "definition": "electric"
+    },
+    "790": {
+        "kana": "期待する",
+        "romaji": "",
+        "definition": "expect"
+    },
+    "791": {
+        "kana": "骨",
+        "romaji": "",
+        "definition": "bone"
+    },
+    "792": {
+        "kana": "レール",
+        "romaji": "",
+        "definition": "rail"
+    },
+    "793": {
+        "kana": "想像する",
+        "romaji": "",
+        "definition": "imagine"
+    },
+    "794": {
+        "kana": "提供する",
+        "romaji": "",
+        "definition": "provide"
+    },
+    "795": {
+        "kana": "同意する",
+        "romaji": "",
+        "definition": "agree"
+    },
+    "796": {
+        "kana": "このようにして",
+        "romaji": "",
+        "definition": "thus"
+    },
+    "797": {
+        "kana": "優しい",
+        "romaji": "",
+        "definition": "gentle"
+    },
+    "798": {
+        "kana": "女",
+        "romaji": "",
+        "definition": "woman"
+    },
+    "799": {
+        "kana": "キャプテン",
+        "romaji": "",
+        "definition": "captain"
+    },
+    "800": {
+        "kana": "推測",
+        "romaji": "",
+        "definition": "guess"
+    },
+    "801": {
+        "kana": "必要",
+        "romaji": "",
+        "definition": "necessary"
+    },
+    "802": {
+        "kana": "シャープ",
+        "romaji": "",
+        "definition": "sharp"
+    },
+    "803": {
+        "kana": "ウイング",
+        "romaji": "",
+        "definition": "wing"
+    },
+    "804": {
+        "kana": "作る",
+        "romaji": "",
+        "definition": "create"
+    },
+    "805": {
+        "kana": "隣人",
+        "romaji": "",
+        "definition": "neighbor"
+    },
+    "806": {
+        "kana": "ウォッシュ",
+        "romaji": "",
+        "definition": "wash"
+    },
+    "807": {
+        "kana": "バット",
+        "romaji": "",
+        "definition": "bat"
+    },
+    "808": {
+        "kana": "むしろ",
+        "romaji": "",
+        "definition": "rather"
+    },
+    "809": {
+        "kana": "群衆",
+        "romaji": "",
+        "definition": "crowd"
+    },
+    "810": {
+        "kana": "トウモロコシ",
+        "romaji": "",
+        "definition": "corn"
+    },
+    "811": {
+        "kana": "比較する",
+        "romaji": "",
+        "definition": "compare"
+    },
+    "812": {
+        "kana": "詩",
+        "romaji": "",
+        "definition": "poem"
+    },
+    "813": {
+        "kana": "文字列",
+        "romaji": "",
+        "definition": "string"
+    },
+    "814": {
+        "kana": "鐘",
+        "romaji": "",
+        "definition": "bell"
+    },
+    "815": {
+        "kana": "決まる",
+        "romaji": "",
+        "definition": "depend"
+    },
+    "816": {
+        "kana": "肉",
+        "romaji": "",
+        "definition": "meat"
+    },
+    "817": {
+        "kana": "こする",
+        "romaji": "",
+        "definition": "rub"
+    },
+    "818": {
+        "kana": "チューブ",
+        "romaji": "",
+        "definition": "tube"
+    },
+    "819": {
+        "kana": "有名な",
+        "romaji": "",
+        "definition": "famous"
+    },
+    "820": {
+        "kana": "ドル",
+        "romaji": "",
+        "definition": "dollar"
+    },
+    "821": {
+        "kana": "ストリーム",
+        "romaji": "",
+        "definition": "stream"
+    },
+    "822": {
+        "kana": "恐怖",
+        "romaji": "",
+        "definition": "fear"
+    },
+    "823": {
+        "kana": "視力",
+        "romaji": "",
+        "definition": "sight"
+    },
+    "824": {
+        "kana": "薄い",
+        "romaji": "",
+        "definition": "thin"
+    },
+    "825": {
+        "kana": "三角形",
+        "romaji": "",
+        "definition": "triangle"
+    },
+    "826": {
+        "kana": "惑星",
+        "romaji": "",
+        "definition": "planet"
+    },
+    "827": {
+        "kana": "急ぐ",
+        "romaji": "",
+        "definition": "hurry"
+    },
+    "828": {
+        "kana": "チーフ",
+        "romaji": "",
+        "definition": "chief"
+    },
+    "829": {
+        "kana": "コロニー",
+        "romaji": "",
+        "definition": "colony"
+    },
+    "830": {
+        "kana": "クロック",
+        "romaji": "",
+        "definition": "clock"
+    },
+    "831": {
+        "kana": "地雷",
+        "romaji": "",
+        "definition": "mine"
+    },
+    "832": {
+        "kana": "ネクタイ",
+        "romaji": "",
+        "definition": "tie"
+    },
+    "833": {
+        "kana": "入力する",
+        "romaji": "",
+        "definition": "enter"
+    },
+    "834": {
+        "kana": "主要な",
+        "romaji": "",
+        "definition": "major"
+    },
+    "835": {
+        "kana": "新鮮な",
+        "romaji": "",
+        "definition": "fresh"
+    },
+    "836": {
+        "kana": "検索",
+        "romaji": "",
+        "definition": "search"
+    },
+    "837": {
+        "kana": "送信",
+        "romaji": "",
+        "definition": "send"
+    },
+    "838": {
+        "kana": "黄色",
+        "romaji": "",
+        "definition": "yellow"
+    },
+    "839": {
+        "kana": "銃",
+        "romaji": "",
+        "definition": "gun"
+    },
+    "840": {
+        "kana": "許可する",
+        "romaji": "",
+        "definition": "allow"
+    },
+    "841": {
+        "kana": "印刷",
+        "romaji": "",
+        "definition": "print"
+    },
+    "842": {
+        "kana": "死んだ",
+        "romaji": "",
+        "definition": "dead"
+    },
+    "843": {
+        "kana": "スポット",
+        "romaji": "",
+        "definition": "spot"
+    },
+    "844": {
+        "kana": "砂漠",
+        "romaji": "",
+        "definition": "desert"
+    },
+    "845": {
+        "kana": "スーツ",
+        "romaji": "",
+        "definition": "suit"
+    },
+    "846": {
+        "kana": "現在の",
+        "romaji": "",
+        "definition": "current"
+    },
+    "847": {
+        "kana": "リフト",
+        "romaji": "",
+        "definition": "lift"
+    },
+    "848": {
+        "kana": "ローズ",
+        "romaji": "",
+        "definition": "rose"
+    },
+    "849": {
+        "kana": "届く",
+        "romaji": "",
+        "definition": "arrive"
+    },
+    "850": {
+        "kana": "マスター",
+        "romaji": "",
+        "definition": "master"
+    },
+    "851": {
+        "kana": "トラック",
+        "romaji": "",
+        "definition": "track"
+    },
+    "852": {
+        "kana": "親",
+        "romaji": "",
+        "definition": "parent"
+    },
+    "853": {
+        "kana": "海岸",
+        "romaji": "",
+        "definition": "shore"
+    },
+    "854": {
+        "kana": "分裂",
+        "romaji": "",
+        "definition": "division"
+    },
+    "855": {
+        "kana": "シート",
+        "romaji": "",
+        "definition": "sheet"
+    },
+    "856": {
+        "kana": "物質",
+        "romaji": "",
+        "definition": "substance"
+    },
+    "857": {
+        "kana": "好む",
+        "romaji": "",
+        "definition": "favor"
+    },
+    "858": {
+        "kana": "接続する",
+        "romaji": "",
+        "definition": "connect"
+    },
+    "859": {
+        "kana": "ポスト",
+        "romaji": "",
+        "definition": "post"
+    },
+    "860": {
+        "kana": "過ごす",
+        "romaji": "",
+        "definition": "spend"
+    },
+    "861": {
+        "kana": "和音",
+        "romaji": "",
+        "definition": "chord"
+    },
+    "862": {
+        "kana": "脂肪",
+        "romaji": "",
+        "definition": "fat"
+    },
+    "863": {
+        "kana": "うれしい",
+        "romaji": "",
+        "definition": "glad"
+    },
+    "864": {
+        "kana": "オリジナル",
+        "romaji": "",
+        "definition": "original"
+    },
+    "865": {
+        "kana": "シェア",
+        "romaji": "",
+        "definition": "share"
+    },
+    "866": {
+        "kana": "駅",
+        "romaji": "",
+        "definition": "station"
+    },
+    "867": {
+        "kana": "お父さん",
+        "romaji": "",
+        "definition": "dad"
+    },
+    "868": {
+        "kana": "パン",
+        "romaji": "",
+        "definition": "bread"
+    },
+    "869": {
+        "kana": "充電",
+        "romaji": "",
+        "definition": "charge"
+    },
+    "870": {
+        "kana": "適切な",
+        "romaji": "",
+        "definition": "proper"
+    },
+    "871": {
+        "kana": "バー",
+        "romaji": "",
+        "definition": "bar"
+    },
+    "872": {
+        "kana": "申し出",
+        "romaji": "",
+        "definition": "offer"
+    },
+    "873": {
+        "kana": "セグメント",
+        "romaji": "",
+        "definition": "segment"
+    },
+    "874": {
+        "kana": "スレーブ",
+        "romaji": "",
+        "definition": "slave"
+    },
+    "875": {
+        "kana": "アヒル",
+        "romaji": "",
+        "definition": "duck"
+    },
+    "876": {
+        "kana": "インスタント",
+        "romaji": "",
+        "definition": "instant"
+    },
+    "877": {
+        "kana": "市場",
+        "romaji": "",
+        "definition": "market"
+    },
+    "878": {
+        "kana": "度",
+        "romaji": "",
+        "definition": "degree"
+    },
+    "879": {
+        "kana": "投入する",
+        "romaji": "",
+        "definition": "populate"
+    },
+    "880": {
+        "kana": "ひよこ",
+        "romaji": "",
+        "definition": "chick"
+    },
+    "881": {
+        "kana": "かわいい",
+        "romaji": "",
+        "definition": "dear"
+    },
+    "882": {
+        "kana": "敵",
+        "romaji": "",
+        "definition": "enemy"
+    },
+    "883": {
+        "kana": "返事",
+        "romaji": "",
+        "definition": "reply"
+    },
+    "884": {
+        "kana": "ドリンク",
+        "romaji": "",
+        "definition": "drink"
+    },
+    "885": {
+        "kana": "起こる",
+        "romaji": "",
+        "definition": "occur"
+    },
+    "886": {
+        "kana": "サポート",
+        "romaji": "",
+        "definition": "support"
+    },
+    "887": {
+        "kana": "スピーチ",
+        "romaji": "",
+        "definition": "speech"
+    },
+    "888": {
+        "kana": "自然",
+        "romaji": "",
+        "definition": "nature"
+    },
+    "889": {
+        "kana": "レンジ",
+        "romaji": "",
+        "definition": "range"
+    },
+    "890": {
+        "kana": "スチーム",
+        "romaji": "",
+        "definition": "steam"
+    },
+    "891": {
+        "kana": "モーション",
+        "romaji": "",
+        "definition": "motion"
+    },
+    "892": {
+        "kana": "パス",
+        "romaji": "",
+        "definition": "path"
+    },
+    "893": {
+        "kana": "液体",
+        "romaji": "",
+        "definition": "liquid"
+    },
+    "894": {
+        "kana": "ログ",
+        "romaji": "",
+        "definition": "log"
+    },
+    "895": {
+        "kana": "意味",
+        "romaji": "",
+        "definition": "meant"
+    },
+    "896": {
+        "kana": "商",
+        "romaji": "",
+        "definition": "quotient"
+    },
+    "897": {
+        "kana": "歯牙",
+        "romaji": "",
+        "definition": "teeth"
+    },
+    "898": {
+        "kana": "シェル",
+        "romaji": "",
+        "definition": "shell"
+    },
+    "899": {
+        "kana": "首",
+        "romaji": "",
+        "definition": "neck"
+    },
+    "900": {
+        "kana": "酸素",
+        "romaji": "",
+        "definition": "oxygen"
+    },
+    "901": {
+        "kana": "砂糖",
+        "romaji": "",
+        "definition": "sugar"
+    },
+    "902": {
+        "kana": "死",
+        "romaji": "",
+        "definition": "death"
+    },
+    "903": {
+        "kana": "かわいい",
+        "romaji": "",
+        "definition": "pretty"
+    },
+    "904": {
+        "kana": "スキル",
+        "romaji": "",
+        "definition": "skill"
+    },
+    "905": {
+        "kana": "女性たち",
+        "romaji": "",
+        "definition": "women"
+    },
+    "906": {
+        "kana": "シーズン",
+        "romaji": "",
+        "definition": "season"
+    },
+    "907": {
+        "kana": "ソリューション",
+        "romaji": "",
+        "definition": "solution"
+    },
+    "908": {
+        "kana": "マグネット",
+        "romaji": "",
+        "definition": "magnet"
+    },
+    "909": {
+        "kana": "銀",
+        "romaji": "",
+        "definition": "silver"
+    },
+    "910": {
+        "kana": "感謝",
+        "romaji": "",
+        "definition": "thank"
+    },
+    "911": {
+        "kana": "ブランチ",
+        "romaji": "",
+        "definition": "branch"
+    },
+    "912": {
+        "kana": "マッチ",
+        "romaji": "",
+        "definition": "match"
+    },
+    "913": {
+        "kana": "サフィックス",
+        "romaji": "",
+        "definition": "suffix"
+    },
+    "914": {
+        "kana": "特に",
+        "romaji": "",
+        "definition": "especially"
+    },
+    "915": {
+        "kana": "イチジク",
+        "romaji": "",
+        "definition": "fig"
+    },
+    "916": {
+        "kana": "恐れて",
+        "romaji": "",
+        "definition": "afraid"
+    },
+    "917": {
+        "kana": "巨大な",
+        "romaji": "",
+        "definition": "huge"
+    },
+    "918": {
+        "kana": "姉妹",
+        "romaji": "",
+        "definition": "sister"
+    },
+    "919": {
+        "kana": "スチール",
+        "romaji": "",
+        "definition": "steel"
+    },
+    "920": {
+        "kana": "話し合う",
+        "romaji": "",
+        "definition": "discuss"
+    },
+    "921": {
+        "kana": "フォワード",
+        "romaji": "",
+        "definition": "forward"
+    },
+    "922": {
+        "kana": "同じような",
+        "romaji": "",
+        "definition": "similar"
+    },
+    "923": {
+        "kana": "ガイド",
+        "romaji": "",
+        "definition": "guide"
+    },
+    "924": {
+        "kana": "経験",
+        "romaji": "",
+        "definition": "experience"
+    },
+    "925": {
+        "kana": "スコア",
+        "romaji": "",
+        "definition": "score"
+    },
+    "926": {
+        "kana": "リンゴ",
+        "romaji": "",
+        "definition": "apple"
+    },
+    "927": {
+        "kana": "買った",
+        "romaji": "",
+        "definition": "bought"
+    },
+    "928": {
+        "kana": "主導",
+        "romaji": "",
+        "definition": "led"
+    },
+    "929": {
+        "kana": "ピッチ",
+        "romaji": "",
+        "definition": "pitch"
+    },
+    "930": {
+        "kana": "コート",
+        "romaji": "",
+        "definition": "coat"
+    },
+    "931": {
+        "kana": "マス",
+        "romaji": "",
+        "definition": "mass"
+    },
+    "932": {
+        "kana": "カード",
+        "romaji": "",
+        "definition": "card"
+    },
+    "933": {
+        "kana": "バンド",
+        "romaji": "",
+        "definition": "band"
+    },
+    "934": {
+        "kana": "ロープ",
+        "romaji": "",
+        "definition": "rope"
+    },
+    "935": {
+        "kana": "スリップ",
+        "romaji": "",
+        "definition": "slip"
+    },
+    "936": {
+        "kana": "勝つ",
+        "romaji": "",
+        "definition": "win"
+    },
+    "937": {
+        "kana": "夢",
+        "romaji": "",
+        "definition": "dream"
+    },
+    "938": {
+        "kana": "夕べ",
+        "romaji": "",
+        "definition": "evening"
+    },
+    "939": {
+        "kana": "条件",
+        "romaji": "",
+        "definition": "condition"
+    },
+    "940": {
+        "kana": "フィード",
+        "romaji": "",
+        "definition": "feed"
+    },
+    "941": {
+        "kana": "ツール",
+        "romaji": "",
+        "definition": "tool"
+    },
+    "942": {
+        "kana": "合計",
+        "romaji": "",
+        "definition": "total"
+    },
+    "943": {
+        "kana": "基本",
+        "romaji": "",
+        "definition": "basic"
+    },
+    "944": {
+        "kana": "匂い",
+        "romaji": "",
+        "definition": "smell"
+    },
+    "945": {
+        "kana": "谷",
+        "romaji": "",
+        "definition": "valley"
+    },
+    "946": {
+        "kana": "も",
+        "romaji": "",
+        "definition": "nor"
+    },
+    "947": {
+        "kana": "ダブル",
+        "romaji": "",
+        "definition": "double"
+    },
+    "948": {
+        "kana": "座席",
+        "romaji": "",
+        "definition": "seat"
+    },
+    "949": {
+        "kana": "続ける",
+        "romaji": "",
+        "definition": "continue"
+    },
+    "950": {
+        "kana": "ブロック",
+        "romaji": "",
+        "definition": "block"
+    },
+    "951": {
+        "kana": "チャート",
+        "romaji": "",
+        "definition": "chart"
+    },
+    "952": {
+        "kana": "帽子",
+        "romaji": "",
+        "definition": "hat"
+    },
+    "953": {
+        "kana": "売る",
+        "romaji": "",
+        "definition": "sell"
+    },
+    "954": {
+        "kana": "成功",
+        "romaji": "",
+        "definition": "success"
+    },
+    "955": {
+        "kana": "会社",
+        "romaji": "",
+        "definition": "company"
+    },
+    "956": {
+        "kana": "引く",
+        "romaji": "",
+        "definition": "subtract"
+    },
+    "957": {
+        "kana": "イベント",
+        "romaji": "",
+        "definition": "event"
+    },
+    "958": {
+        "kana": "特定の",
+        "romaji": "",
+        "definition": "particular"
+    },
+    "959": {
+        "kana": "契約",
+        "romaji": "",
+        "definition": "deal"
+    },
+    "960": {
+        "kana": "泳ぐ",
+        "romaji": "",
+        "definition": "swim"
+    },
+    "961": {
+        "kana": "言葉",
+        "romaji": "",
+        "definition": "term"
+    },
+    "962": {
+        "kana": "反対",
+        "romaji": "",
+        "definition": "opposite"
+    },
+    "963": {
+        "kana": "妻",
+        "romaji": "",
+        "definition": "wife"
+    },
+    "964": {
+        "kana": "靴",
+        "romaji": "",
+        "definition": "shoe"
+    },
+    "965": {
+        "kana": "肩",
+        "romaji": "",
+        "definition": "shoulder"
+    },
+    "966": {
+        "kana": "スプレッド",
+        "romaji": "",
+        "definition": "spread"
+    },
+    "967": {
+        "kana": "アレンジ",
+        "romaji": "",
+        "definition": "arrange"
+    },
+    "968": {
+        "kana": "キャンプ",
+        "romaji": "",
+        "definition": "camp"
+    },
+    "969": {
+        "kana": "発明する",
+        "romaji": "",
+        "definition": "invent"
+    },
+    "970": {
+        "kana": "綿",
+        "romaji": "",
+        "definition": "cotton"
+    },
+    "971": {
+        "kana": "ボルン",
+        "romaji": "",
+        "definition": "born"
+    },
+    "972": {
+        "kana": "決定する",
+        "romaji": "",
+        "definition": "determine"
+    },
+    "973": {
+        "kana": "クォート",
+        "romaji": "",
+        "definition": "quart"
+    },
+    "974": {
+        "kana": "人",
+        "romaji": "",
+        "definition": "nine"
+    },
+    "975": {
+        "kana": "トラック",
+        "romaji": "",
+        "definition": "truck"
+    },
+    "976": {
+        "kana": "ノイズ",
+        "romaji": "",
+        "definition": "noise"
+    },
+    "977": {
+        "kana": "レベル",
+        "romaji": "",
+        "definition": "level"
+    },
+    "978": {
+        "kana": "チャンス",
+        "romaji": "",
+        "definition": "chance"
+    },
+    "979": {
+        "kana": "集まる",
+        "romaji": "",
+        "definition": "gather"
+    },
+    "980": {
+        "kana": "ショップ",
+        "romaji": "",
+        "definition": "shop"
+    },
+    "981": {
+        "kana": "ストレッチ",
+        "romaji": "",
+        "definition": "stretch"
+    },
+    "982": {
+        "kana": "投げる",
+        "romaji": "",
+        "definition": "throw"
+    },
+    "983": {
+        "kana": "輝き",
+        "romaji": "",
+        "definition": "shine"
+    },
+    "984": {
+        "kana": "財産",
+        "romaji": "",
+        "definition": "property"
+    },
+    "985": {
+        "kana": "コラム",
+        "romaji": "",
+        "definition": "column"
+    },
+    "986": {
+        "kana": "分子",
+        "romaji": "",
+        "definition": "molecule"
+    },
+    "987": {
+        "kana": "選択する",
+        "romaji": "",
+        "definition": "select"
+    },
+    "988": {
+        "kana": "間違った",
+        "romaji": "",
+        "definition": "wrong"
+    },
+    "989": {
+        "kana": "グレー",
+        "romaji": "",
+        "definition": "gray"
+    },
+    "990": {
+        "kana": "リピート",
+        "romaji": "",
+        "definition": "repeat"
+    },
+    "991": {
+        "kana": "必要とする",
+        "romaji": "",
+        "definition": "require"
+    },
+    "992": {
+        "kana": "幅広い",
+        "romaji": "",
+        "definition": "broad"
+    },
+    "993": {
+        "kana": "準備する",
+        "romaji": "",
+        "definition": "prepare"
+    },
+    "994": {
+        "kana": "塩",
+        "romaji": "",
+        "definition": "salt"
+    },
+    "995": {
+        "kana": "鼻",
+        "romaji": "",
+        "definition": "nose"
+    },
+    "996": {
+        "kana": "複数",
+        "romaji": "",
+        "definition": "plural"
+    },
+    "997": {
+        "kana": "怒り",
+        "romaji": "",
+        "definition": "anger"
+    },
+    "998": {
+        "kana": "請求",
+        "romaji": "",
+        "definition": "claim"
+    },
+    "999": {
+        "kana": "大陸",
+        "romaji": "",
+        "definition": "continent"
+    }
+}

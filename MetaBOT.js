@@ -2,13 +2,13 @@ const Discord = require('discord.js');
 const Canvas = require('canvas');
 const client = new Discord.Client();
 const { get } = require("https");
+const fs = require('fs');
 let config = require('./config.json');
 let kana = require('./kana.json');
 let vocabulary = require('./vocabulary.json');
- 
-var answer = 'none';
+let vocabulary2 = require('./vocabulary2.json');
+let profile = require('./profile.json');
 var URL = 'none';
-var mode = 'hiragana';
  
 async function NEKOS_API(){
   get("https://neko-love.xyz/api/v1/neko", (res) => {
@@ -43,48 +43,7 @@ client.on('ready', () => {
 });
  
 client.on('message', async message => {
-  async function RENDER(string1, string2){
-    await NEKOS_API()
-    const canvas = Canvas.createCanvas(250, 250);
-    const ctx = canvas.getContext('2d');
-    ctx.rect(20, 20, canvas.width-40, canvas.height-40);
-    ctx.lineJoin = "round";
-    ctx.lineWidth = 40;
-    ctx.stroke();
-    ctx.closePath();
-    ctx.fill();
-    ctx.globalCompositeOperation = 'source-in';
-    const background = await Canvas.loadImage(URL);
-    if(background.width>background.height)
-     ctx.drawImage(background, (background.width-background.height)/2, 0, background.height, background.height, 0, 0, canvas.width, canvas.height);
-    else
-      ctx.drawImage(background, 0, (background.height-background.width)/2, background.width, background.width, 0, 0, canvas.width, canvas.height);
-    ctx.globalCompositeOperation = 'source-over';
-    ctx.font = '220px sans-serif';
-    ctx.fillStyle = '#000000';
-    ctx.fillText(string1, 15, 210);
-    ctx.font = '200px sans-serif';
-    ctx.fillStyle = '#ffffff';
-    ctx.fillText(string1, 25, 200);
-    ctx.strokeStyle = "#000000";
-    ctx.font = '200px sans-serif';
-    ctx.lineWidth = 2
-    ctx.strokeText(string1, 25, 200);
-    const buf = canvas.toBuffer('image/png');
-    message.channel.send("Что это за символ?", {
-      embed: {
-        color: 0x7486C2,
-        description:'Ответ:  ||'+ string2 +'||',
-      },
-      files: [{
-        attachment: buf,
-        name: "hiragana.png"
-      }]
-    });
-    answer = string2;
-  }
-
-  async function RENDERREAD(string1, string2, string3){
+  async function RENDER(string1, string2, string3){
     await NEKOS_API()
     const canvas = Canvas.createCanvas(250, 250);
     const ctx = canvas.getContext('2d');
@@ -118,17 +77,75 @@ client.on('message', async message => {
     ctx.textBaseline = 'middle';
     ctx.strokeText(string1, 125, 125);
     const buf = canvas.toBuffer('image/png');
-    message.channel.send("ну давай, прочти это...", {
-      embed: {
-        color: 0x7486C2,
-        description:'Ответ:  ||'+ string2 +'||\n\nПеревод: ||'+ string3 +'||',
-      },
-      files: [{
-        attachment: buf,
-        name: "hiragana.png"
-      }]
-    });
-    answer = string2;
+    if(profile[message.author.id].mode === ('hiragana'||'katakana')){
+      message.channel.send("Что это за символ, "+message.author.username+"?", {
+        embed: {
+          color: 0x7486C2,
+          description:'Ответ:  ||'+ string2 +'||',
+        },
+        files: [{
+          attachment: buf,
+          name: "hiragana.png"
+        }]
+      });
+    }
+    if(profile[message.author.id].mode === 'read'){
+      message.channel.send("ну давай, "+message.author.username+", прочти это...", {
+        embed: {
+          color: 0x7486C2,
+          description:'Ответ:  ||'+ string2 +'||\n\nПеревод: '+ string3,
+        },
+        files: [{
+          attachment: buf,
+          name: "hiragana.png"
+        }]
+      });
+    }
+    if(profile[message.author.id].mode === 'learn'){
+      if(profile[message.author.id].massid[0] === 1){
+        if(profile[message.author.id].points[profile[message.author.id].massid[1]] <= 5){
+          message.channel.send("ну давай, "+message.author.username+", переведи это...", {
+            embed: {
+              color: 0x7486C2,
+              description:'Читается как: '+ string3 +'\n\nПодсказка: ||'+ string2+'||',
+            },
+            files: [{
+              attachment: buf,
+              name: "hiragana.png"
+            }]
+          });
+        }
+        else{
+          message.channel.send("ну давай, "+message.author.username+", переведи это...", {
+            embed: {
+              color: 0x7486C2,
+              description:'Читается как: '+ string3,
+            },
+            files: [{
+              attachment: buf,
+              name: "hiragana.png"
+            }]
+          });
+        }
+      }
+      else{
+        message.channel.send("ну давай, "+message.author.username+", переведи это...", {
+          embed: {
+            color: 0x7486C2,
+            description:'Читается как: '+ string3,
+          },
+          files: [{
+            attachment: buf,
+            name: "hiragana.png"
+          }]
+        });
+      }
+    }
+    for (var i = 0; i < 1 ; i++){
+      profile[message.author.id].answer = string2;
+      console.log(string2)
+      fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
+    }
   }
   function HIRAGANA(){
     var rand = Math.floor(Math.random() * (70 - 0 + 1)) + 0;
@@ -140,51 +157,147 @@ client.on('message', async message => {
   }
   function READ(){
     var rand = Math.floor(Math.random() * (726 - 0 + 1)) + 0;
-    RENDERREAD(vocabulary[rand].kana, vocabulary[rand].romaji,vocabulary[rand].definition)
+    RENDER(vocabulary[rand].kana, vocabulary[rand].romaji,vocabulary[rand].definition)
   }
-  if (message.content.toLowerCase() == answer||message.content.toLowerCase() == 'skip') {
-    console.log(URL.slice(URL.length - 5, URL.length))
-    if(URL.slice(URL.length - 5, URL.length) == '.webp')
-    URL = 'https://cdn.discordapp.com/attachments/600294780144189481/641639925174763530/breakbot.jpg';
-    if(message.content.toLowerCase() == 'skip')
-    message.reply('Плохо.:rage:');
-    else
-    message.reply('правильно.');
-    if(mode == 'hiragana')
-      HIRAGANA();
-    if(mode == 'katakana')
-      KATAKANA();
-    if(mode == 'read')
-      READ();
+  function LEARN(){
+    var temp = 0
+    var rand = Math.floor(Math.random() * (100 - 0)) + 1
+    if(profile[message.author.id].learned.length > 33) temp = 33;
+    else temp = profile[message.author.id].learned.length;
+    if(rand > temp){
+      var rand = Math.floor(Math.random() * (30 - 0));
+      RENDER(vocabulary2[profile[message.author.id].learning[rand]].kana, vocabulary2[profile[message.author.id].learning[rand]].definition, vocabulary2[profile[message.author.id].learning[rand]].romaji)
+      for (var i = 0; i < 1 ; i++){
+        profile[message.author.id].massid[0] = 1;
+        profile[message.author.id].massid[1] = rand;
+        fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
+      }
+    }
+    else{
+      var rand = Math.floor(Math.random() * (profile[message.author.id].learned.length - 0));
+      RENDER(vocabulary2[profile[message.author.id].learned[rand]].kana, vocabulary2[profile[message.author.id].learned[rand]].definition, vocabulary2[profile[message.author.id].learned[rand]].romaji)
+      for (var i = 0; i < 1 ; i++){
+        profile[message.author.id].massid[0] = 2;
+        profile[message.author.id].massid[1] = rand;
+        fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
+      }
+    }
+  }
+
+  if(!profile[message.author.id] === false){
+    if(profile[message.author.id].channel == message.channel.id && profile[message.author.id].mode == 'learn' && message.content.toLowerCase().slice(0, 2) != 'j!'){
+      if(message.content.toLowerCase() == 'skip'){
+        message.reply('плохо!!! Ответ был ``'+profile[message.author.id].answer+'`` :rage:');
+        LEARN()
+      }
+      else{
+        if(message.content.toLowerCase() == profile[message.author.id].answer){
+          message.reply('правильно.');
+          if(profile[message.author.id].points[profile[message.author.id].massid[1]] < 15){
+            for (var i = 0; i < 1 ; i++){
+              profile[message.author.id].points[profile[message.author.id].massid[1]]++
+              fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
+            }
+          }
+          else{
+            for (var i = 0; i < 1 ; i++){
+              profile[message.author.id].points[profile[message.author.id].massid[1]] = 0;
+              profile[message.author.id].learned.push(profile[message.author.id].learning[profile[message.author.id].massid[1]]);
+              profile[message.author.id].learning[profile[message.author.id].massid[1]] = profile[message.author.id].learning.length + profile[message.author.id].learned.length -1;
+              console.log(profile[message.author.id].learning.length + profile[message.author.id].learned.length -1)
+              fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
+            }
+          }
+          LEARN()
+        }
+        else{
+          message.reply('неправильно. Ответ был ``'+profile[message.author.id].answer+'`` :rage:');
+          LEARN()
+        }
+      }
+    }
+  }
+
+  if(!profile[message.author.id] === false){
+    if((message.content.toLowerCase() == profile[message.author.id].answer || message.content.toLowerCase() == 'skip') && profile[message.author.id].channel == message.channel.id && profile[message.author.id].mode != 'learn') {
+      if(URL.slice(URL.length - 5, URL.length) == '.webp')
+      URL = 'https://cdn.discordapp.com/attachments/600294780144189481/641639925174763530/breakbot.jpg';
+      if(message.content.toLowerCase() == 'skip')
+      message.reply('Плохо.:rage:');
+      else
+      message.reply('правильно.');
+      if(profile[message.author.id].mode == 'hiragana')
+        HIRAGANA();
+      if(profile[message.author.id].mode == 'katakana')
+        KATAKANA();
+      if(profile[message.author.id].mode == 'read')
+        READ();
+    }
   }
   
   if (message.content.toLowerCase().slice(0, 2) == 'j!') {
+    if(!profile[message.author.id]){
+      for (var i = 0; i < 1 ; i++){
+        profile[message.author.id]= {
+          hentai:"false",
+          mode:"",
+          answer:"",
+          channel:"",
+          learning:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29],
+          points:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+          learned:[],
+          massid:[0,0]
+        }
+        fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
+      }
+    }
     if(message.content.toLowerCase().slice(2, message.content.length) == 'help'){
       HelpEmbed()
       function HelpEmbed() {
         message.channel.send(new Discord.RichEmbed()
             .setColor("0099ff")
             .setAuthor("MetaBOT", "https://cdn.discordapp.com/avatars/600705935228403722/3daed4e4f4174552d893477cc7d38c87.png?size=2048")
-            .setDescription("Биб-буп! Konnichiha, бро.  Я ,MetaBOT, создан для помощи в изучении японского языка и подготовки к экзамену  JLPT n5.\n\nА вот и мои команды:\n\n**j!help** - Краткий список команд и объяснение их предназначение\n\n**j!hiragana** - запускает тренажер для запоминания хираганы. Префикс перед ответом ставить не надо.\n\n**j!katakana** - запускает тренажер для запоминания катаканы. Префикс перед ответом ставить не надо.\n\n**j!read** - запускает тренажер для чтения слов на хирагане и катакане. Префикс перед ответом ставить не надо.\n\nИсходный код: https://github.com/Metasux/MetaJesus")
+            .setDescription("Биб-буп! Konnichiha, бро.  Я ,MetaBOT, создан для помощи в изучении японского языка и подготовки к экзамену  JLPT n5.\n\nА вот и мои команды:\n\n**j!help** - Краткий список команд и объяснение их предназначение\n\n**j!hiragana** - запускает тренажер для запоминания хираганы. Префикс перед ответом ставить не надо.\n\n**j!katakana** - запускает тренажер для запоминания катаканы. Префикс перед ответом ставить не надо.\n\n**j!read** - запускает тренажер для чтения слов на хирагане и катакане. Префикс перед ответом ставить не надо.\n\n**j!learn** - запускает тренажер, который вас закидывает вашей личной колодой карточек со словами, которая по мере изучения будет расширяться.\n\nИсходный код: https://github.com/Metasux/MetaJesus")
             .setTitle("Информация")
-            .setFooter("ByМетøчка v1.6", "https://avatars2.githubusercontent.com/u/49251114?s=460&amp;v=4"));
+            .setFooter("ByМетøчка v1.7", "https://avatars2.githubusercontent.com/u/49251114?s=460&amp;v=4"));
     }
   }
     if(message.content.toLowerCase().slice(2, message.content.length) == 'hiragana'){
-      mode = 'hiragana';
+      for (var i = 0; i < 1 ; i++){
+        profile[message.author.id].mode = 'hiragana';
+        profile[message.author.id].channel = message.channel.id;
+        fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
+      }
       HIRAGANA();
       message.channel.send('Ну раз хирагана, то хирагана.')
     }
  
     if(message.content.toLowerCase().slice(2, message.content.length) == 'katakana'){
-      mode = 'katakana';
+      for (var i = 0; i < 1 ; i++){
+        profile[message.author.id].mode = 'katakana';
+        profile[message.author.id].channel = message.channel.id;
+        fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
+      }
       KATAKANA();
       message.channel.send('Ну раз катакана, то катакана.')
     }
     if(message.content.toLowerCase().slice(2, message.content.length) == 'read'){
-      mode = 'read';
+      for (var i = 0; i < 1 ; i++){
+        profile[message.author.id].mode = 'read';
+        profile[message.author.id].channel = message.channel.id;
+        fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
+      }
       READ();
       message.channel.send('Ничего себе, читать будешь? Ну оки-доки!')
+    }
+    if(message.content.toLowerCase().slice(2, message.content.length) == 'learn'){
+      for (var i = 0; i < 1 ; i++){
+        profile[message.author.id].mode = 'learn';
+        profile[message.author.id].channel = message.channel.id;
+        fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
+      }
+      LEARN()
+      message.channel.send('Ну окей, переводи.')
     }
   }
 });
@@ -202,4 +315,4 @@ client.on('messageUpdate', (msg, newmsg) => {
 })
 
 client.login(config.token);
-//ByМетøчка for himself v1.6
+//ByМетøчка for himself v1.7
