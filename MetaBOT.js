@@ -88,6 +88,11 @@ client.on('message', async message => {
           name: "hiragana.png"
         }]
       });
+      for (var i = 0; i < 1 ; i++){
+        profile[message.author.id].answer = string2;
+
+        fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
+      }
     }
     if(profile[message.author.id].mode === 'read'){
       message.channel.send("ну давай, "+message.author.username+", прочти это...", {
@@ -100,11 +105,30 @@ client.on('message', async message => {
           name: "hiragana.png"
         }]
       });
+      for (var i = 0; i < 1 ; i++){
+        profile[message.author.id].answer = string2;
+        fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
+      }
     }
     if(profile[message.author.id].mode === 'learn'){
+      var temp1 = Math.floor(Math.random() * (2 - 0));
+      if(temp1 === 0){
+        for (var i = 0; i < 1 ; i++){
+          profile[message.author.id].answer = string2;
+          temp1 = '__ПЕРЕВЕДИ__';
+          fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
+        }
+      }
+      else{
+        for (var i = 0; i < 1 ; i++){
+          temp1 = '__ПРОЧИТАЙ__';
+          profile[message.author.id].answer = string3;
+          fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
+        }
+      }
       if(profile[message.author.id].massid[0] === 1){
-        if(profile[message.author.id].points[profile[message.author.id].massid[1]] <= 5){
-          message.channel.send("ну давай, "+message.author.username+", переведи это...", {
+        if(profile[message.author.id].points[profile[message.author.id].massid[1]] <= 7){
+          message.channel.send("ну давай, "+message.author.username+", "+temp1+" это...", {
             embed: {
               color: 0x7486C2,
               description:'Читается как: '+ string3 +'\n\nПодсказка: ||'+ string2+'||',
@@ -116,23 +140,37 @@ client.on('message', async message => {
           });
         }
         else{
-          message.channel.send("ну давай, "+message.author.username+", переведи это...", {
-            embed: {
-              color: 0x7486C2,
-              description:'Читается как: '+ string3,
-            },
-            files: [{
-              attachment: buf,
-              name: "hiragana.png"
-            }]
-          });
+          if(profile[message.author.id].points[profile[message.author.id].massid[1]] <= 10){
+            message.channel.send("ну давай, "+message.author.username+", "+temp1+" это...", {
+              embed: {
+                color: 0x7486C2,
+                description:'Читается как: ||'+ string3 +'||',
+              },
+              files: [{
+                attachment: buf,
+                name: "hiragana.png"
+              }]
+            });
+          }
+          else{
+            message.channel.send("ну давай, "+message.author.username+", "+temp1+" это...", {
+              embed: {
+                color: 0x7486C2,
+                description:'Никаких подсказок!!!',
+              },
+              files: [{
+                attachment: buf,
+                name: "hiragana.png"
+              }]
+            });
+          }
         }
       }
       else{
-        message.channel.send("ну давай, "+message.author.username+", переведи это...", {
+        message.channel.send("ну давай, "+message.author.username+", "+temp1+" это...", {
           embed: {
             color: 0x7486C2,
-            description:'Читается как: '+ string3,
+            description:'Читается как: ||'+ string3 +'||',
           },
           files: [{
             attachment: buf,
@@ -140,11 +178,6 @@ client.on('message', async message => {
           }]
         });
       }
-    }
-    for (var i = 0; i < 1 ; i++){
-      profile[message.author.id].answer = string2;
-      console.log(string2)
-      fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
     }
   }
   function HIRAGANA(){
@@ -165,7 +198,7 @@ client.on('message', async message => {
     if(profile[message.author.id].learned.length > 33) temp = 33;
     else temp = profile[message.author.id].learned.length;
     if(rand > temp){
-      var rand = Math.floor(Math.random() * (30 - 0));
+      var rand = Math.floor(Math.random() * (10 - 0));
       RENDER(vocabulary2[profile[message.author.id].learning[rand]].kana, vocabulary2[profile[message.author.id].learning[rand]].definition, vocabulary2[profile[message.author.id].learning[rand]].romaji)
       for (var i = 0; i < 1 ; i++){
         profile[message.author.id].massid[0] = 1;
@@ -186,6 +219,8 @@ client.on('message', async message => {
 
   if(!profile[message.author.id] === false){
     if(profile[message.author.id].channel == message.channel.id && profile[message.author.id].mode == 'learn' && message.content.toLowerCase().slice(0, 2) != 'j!'){
+      if(URL.slice(URL.length - 5, URL.length) == '.webp')
+      URL = 'https://cdn.discordapp.com/attachments/600294780144189481/641639925174763530/breakbot.jpg';
       if(message.content.toLowerCase() == 'skip'){
         message.reply('плохо!!! Ответ был ``'+profile[message.author.id].answer+'`` :rage:');
         LEARN()
@@ -193,7 +228,7 @@ client.on('message', async message => {
       else{
         if(message.content.toLowerCase() == profile[message.author.id].answer){
           message.reply('правильно.');
-          if(profile[message.author.id].points[profile[message.author.id].massid[1]] < 15){
+          if(profile[message.author.id].points[profile[message.author.id].massid[1]] < 25){
             for (var i = 0; i < 1 ; i++){
               profile[message.author.id].points[profile[message.author.id].massid[1]]++
               fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
@@ -243,8 +278,8 @@ client.on('message', async message => {
           mode:"",
           answer:"",
           channel:"",
-          learning:[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29],
-          points:[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+          learning:[0,1,2,3,4,5,6,7,8,9],
+          points:[0,0,0,0,0,0,0,0,0,0],
           learned:[],
           massid:[0,0]
         }
@@ -259,7 +294,7 @@ client.on('message', async message => {
             .setAuthor("MetaBOT", "https://cdn.discordapp.com/avatars/600705935228403722/3daed4e4f4174552d893477cc7d38c87.png?size=2048")
             .setDescription("Биб-буп! Konnichiha, бро.  Я ,MetaBOT, создан для помощи в изучении японского языка и подготовки к экзамену  JLPT n5.\n\nА вот и мои команды:\n\n**j!help** - Краткий список команд и объяснение их предназначение\n\n**j!hiragana** - запускает тренажер для запоминания хираганы. Префикс перед ответом ставить не надо.\n\n**j!katakana** - запускает тренажер для запоминания катаканы. Префикс перед ответом ставить не надо.\n\n**j!read** - запускает тренажер для чтения слов на хирагане и катакане. Префикс перед ответом ставить не надо.\n\n**j!learn** - запускает тренажер, который вас закидывает вашей личной колодой карточек со словами, которая по мере изучения будет расширяться.\n\nИсходный код: https://github.com/Metasux/MetaJesus")
             .setTitle("Информация")
-            .setFooter("ByМетøчка v1.7", "https://avatars2.githubusercontent.com/u/49251114?s=460&amp;v=4"));
+            .setFooter("ByМетøчка v1.8", "https://avatars2.githubusercontent.com/u/49251114?s=460&amp;v=4"));
     }
   }
     if(message.content.toLowerCase().slice(2, message.content.length) == 'hiragana'){
@@ -315,4 +350,4 @@ client.on('messageUpdate', (msg, newmsg) => {
 })
 
 client.login(config.token);
-//ByМетøчка for himself v1.7
+//ByМетøчка for himself v1.8
