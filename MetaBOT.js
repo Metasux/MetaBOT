@@ -8,10 +8,26 @@ let kana = require('./kana.json');
 let vocabulary = require('./vocabulary.json');
 let vocabulary2 = require('./vocabulary2.json');
 let profile = require('./profile.json');
-var URL = 'none';
- 
-async function NEKOS_API(){
-  get("https://neko-love.xyz/api/v1/neko", (res) => {
+var URL = ['none','none'];
+
+NEKOS_API()
+
+client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+  client.user.setGame('j!help for help')
+  NEKOS_API()
+});
+async function NEKOS_API(message){
+  var uurrll = '';
+  if(URL[1] != 'none'){
+    if(profile[message.author.id].hentai === true && (message.channel.type === 'dm' || message.channel.nsfw === true)) uurrll = 'https://neko-love.xyz/api/v1/nekolewd';
+    else uurrll = 'https://neko-love.xyz/api/v1/neko';
+  }
+  else{
+    if(URL[0] == 'none') uurrll = 'https://neko-love.xyz/api/v1/neko';
+    else uurrll = 'https://neko-love.xyz/api/v1/nekolewd';
+  }
+  get(uurrll, (res) => {
   const { statusCode } = res;
   if (statusCode != 200) {
       res.resume;
@@ -24,8 +40,13 @@ async function NEKOS_API(){
   res.on("end", () => {
       try {
           const parsedData = JSON.parse(rawData);
-          URL = parsedData.url;
+          if(uurrll === 'https://neko-love.xyz/api/v1/neko') URL[0] = parsedData.url;
+          else URL[1] = parsedData.url;
           console.log(parsedData.url)
+          if(parsedData.url.slice(parsedData.url.length - 5, parsedData.url.length) == '.webp'){
+            NEKOS_API(message)
+            console.log('замена')
+          }
       } catch (e) {
           console.error(e.message);
       }
@@ -34,17 +55,30 @@ async function NEKOS_API(){
   console.error(err.message);
 })
 };
- 
-NEKOS_API();
- 
-client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
-  client.user.setGame('j!help for help')
-});
- 
+
+
 client.on('message', async message => {
   async function RENDER(string1, string2, string3){
-    await NEKOS_API()
+    var temp1 = 0;
+    await NEKOS_API(message);
+    function HENTAI(){
+      if(profile[message.author.id].hentai === true && (message.channel.type === 'dm' || message.channel.nsfw === true)) return 1;
+      else return 0;
+    }
+    if(Math.floor(Math.random() * (3 - 0)) == 0 && profile[message.author.id].mode === 'learn'){
+      [string1, string2] = [string2, string1]
+      temp1 = 150;
+      for (var i = 0; i < 1 ; i++){
+        profile[message.author.id].answer = [string2,string3],
+        fs.writeFileSync('./profile.json',JSON.stringify(profile, null, 4),(err)=>{if(err) console.log(err);});
+      }
+    }
+    else{
+      for (var i = 0; i < 1 ; i++){
+        profile[message.author.id].answer = string2,
+        fs.writeFileSync('./profile.json',JSON.stringify(profile, null, 4),(err)=>{if(err) console.log(err);});
+      }
+    }
     const canvas = Canvas.createCanvas(250, 250);
     const ctx = canvas.getContext('2d');
     ctx.rect(20, 20, canvas.width-40, canvas.height-40);
@@ -54,24 +88,24 @@ client.on('message', async message => {
     ctx.closePath();
     ctx.fill();
     ctx.globalCompositeOperation = 'source-in';
-    const background = await Canvas.loadImage(URL);
+    const background = await Canvas.loadImage(URL[HENTAI()]);
     if(background.width>background.height)
      ctx.drawImage(background, (background.width-background.height)/2, 0, background.height, background.height, 0, 0, canvas.width, canvas.height);
     else
       ctx.drawImage(background, 0, (background.height-background.width)/2, background.width, background.width, 0, 0, canvas.width, canvas.height);
     ctx.globalCompositeOperation = 'source-over';
-    ctx.font = 250/string1.length+'px sans-serif';
+    ctx.font = (temp1+250)/string1.length+'px sans-serif';
     ctx.fillStyle = '#000000';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     ctx.fillText(string1, 125, 125);
-    ctx.font = 250/string1.length+'px sans-serif';
+    ctx.font = (temp1+250)/string1.length+'px sans-serif';
     ctx.fillStyle = '#ffffff';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     ctx.fillText(string1, 125, 125);
     ctx.strokeStyle = "#000000";
-    ctx.font = 250/string1.length+'px sans-serif';
+    ctx.font = (temp1+250)/string1.length+'px sans-serif';
     ctx.lineWidth = 2
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
@@ -91,7 +125,7 @@ client.on('message', async message => {
       for (var i = 0; i < 1 ; i++){
         profile[message.author.id].answer = string2;
 
-        fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
+        fs.writeFileSync('./profile.json',JSON.stringify(profile, null, 4),(err)=>{if(err) console.log(err);});
       }
     }
     if(profile[message.author.id].mode === 'read'){
@@ -107,28 +141,13 @@ client.on('message', async message => {
       });
       for (var i = 0; i < 1 ; i++){
         profile[message.author.id].answer = string2;
-        fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
+        fs.writeFileSync('./profile.json',JSON.stringify(profile, null, 4),(err)=>{if(err) console.log(err);});
       }
     }
     if(profile[message.author.id].mode === 'learn'){
-      var temp1 = Math.floor(Math.random() * (2 - 0));
-      if(temp1 === 0){
-        for (var i = 0; i < 1 ; i++){
-          profile[message.author.id].answer = string2;
-          temp1 = '__ПЕРЕВЕДИ__';
-          fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
-        }
-      }
-      else{
-        for (var i = 0; i < 1 ; i++){
-          temp1 = '__ПРОЧИТАЙ__';
-          profile[message.author.id].answer = string3;
-          fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
-        }
-      }
       if(profile[message.author.id].massid[0] === 1){
         if(profile[message.author.id].points[profile[message.author.id].massid[1]] <= 7){
-          message.channel.send("ну давай, "+message.author.username+", "+temp1+" это...", {
+          message.channel.send("ну давай, "+message.author.username+", переведи это...", {
             embed: {
               color: 0x7486C2,
               description:'Читается как: '+ string3 +'\n\nПодсказка: ||'+ string2+'||',
@@ -141,7 +160,7 @@ client.on('message', async message => {
         }
         else{
           if(profile[message.author.id].points[profile[message.author.id].massid[1]] <= 10){
-            message.channel.send("ну давай, "+message.author.username+", "+temp1+" это...", {
+            message.channel.send("ну давай, "+message.author.username+", переведи это...", {
               embed: {
                 color: 0x7486C2,
                 description:'Читается как: ||'+ string3 +'||',
@@ -153,7 +172,7 @@ client.on('message', async message => {
             });
           }
           else{
-            message.channel.send("ну давай, "+message.author.username+", "+temp1+" это...", {
+            message.channel.send("ну давай, "+message.author.username+", переведи это...", {
               embed: {
                 color: 0x7486C2,
                 description:'Никаких подсказок!!!',
@@ -167,10 +186,10 @@ client.on('message', async message => {
         }
       }
       else{
-        message.channel.send("ну давай, "+message.author.username+", "+temp1+" это...", {
+        message.channel.send("ну давай, "+message.author.username+", переведи это...", {
           embed: {
             color: 0x7486C2,
-            description:'Читается как: ||'+ string3 +'||',
+            description: 'Никаких подсказок!!!',
           },
           files: [{
             attachment: buf,
@@ -203,7 +222,7 @@ client.on('message', async message => {
       for (var i = 0; i < 1 ; i++){
         profile[message.author.id].massid[0] = 1;
         profile[message.author.id].massid[1] = rand;
-        fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
+        fs.writeFileSync('./profile.json',JSON.stringify(profile, null, 4),(err)=>{if(err) console.log(err);});
       }
     }
     else{
@@ -212,35 +231,36 @@ client.on('message', async message => {
       for (var i = 0; i < 1 ; i++){
         profile[message.author.id].massid[0] = 2;
         profile[message.author.id].massid[1] = rand;
-        fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
+        fs.writeFileSync('./profile.json',JSON.stringify(profile, null, 4),(err)=>{if(err) console.log(err);});
       }
     }
   }
 
   if(!profile[message.author.id] === false){
     if(profile[message.author.id].channel == message.channel.id && profile[message.author.id].mode == 'learn' && message.content.toLowerCase().slice(0, 2) != 'j!'){
-      if(URL.slice(URL.length - 5, URL.length) == '.webp')
-      URL = 'https://cdn.discordapp.com/attachments/600294780144189481/641639925174763530/breakbot.jpg';
       if(message.content.toLowerCase() == 'skip'){
         message.reply('плохо!!! Ответ был ``'+profile[message.author.id].answer+'`` :rage:');
         LEARN()
       }
       else{
-        if(message.content.toLowerCase() == profile[message.author.id].answer){
+        if(profile[message.author.id].answer.indexOf(message.content.toLowerCase()) !== -1){
           message.reply('правильно.');
-          if(profile[message.author.id].points[profile[message.author.id].massid[1]] < 25){
-            for (var i = 0; i < 1 ; i++){
-              profile[message.author.id].points[profile[message.author.id].massid[1]]++
-              fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
+          if(profile[message.author.id].massid[0] === 1){
+            if(profile[message.author.id].points[profile[message.author.id].massid[1]] < 20){
+              for (var i = 0; i < 1 ; i++){
+                profile[message.author.id].points[profile[message.author.id].massid[1]]++
+                fs.writeFileSync('./profile.json',JSON.stringify(profile, null, 4),(err)=>{if(err) console.log(err);});
+              }
             }
-          }
-          else{
-            for (var i = 0; i < 1 ; i++){
-              profile[message.author.id].points[profile[message.author.id].massid[1]] = 0;
-              profile[message.author.id].learned.push(profile[message.author.id].learning[profile[message.author.id].massid[1]]);
-              profile[message.author.id].learning[profile[message.author.id].massid[1]] = profile[message.author.id].learning.length + profile[message.author.id].learned.length -1;
-              console.log(profile[message.author.id].learning.length + profile[message.author.id].learned.length -1)
-              fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
+            else{
+              for (var i = 0; i < 1 ; i++){
+                profile[message.author.id].points[profile[message.author.id].massid[1]] = 0;
+                profile[message.author.id].learned.push(profile[message.author.id].learning[profile[message.author.id].massid[1]]);
+                console.log(profile[message.author.id].learning[profile[message.author.id].massid[1]])
+                profile[message.author.id].learning[profile[message.author.id].massid[1]] = profile[message.author.id].learning.length + profile[message.author.id].learned.length -1;
+                console.log(profile[message.author.id].learning.length + profile[message.author.id].learned.length -1)
+                fs.writeFileSync('./profile.json',JSON.stringify(profile, null, 4),(err)=>{if(err) console.log(err);});
+              }
             }
           }
           LEARN()
@@ -255,8 +275,6 @@ client.on('message', async message => {
 
   if(!profile[message.author.id] === false){
     if((message.content.toLowerCase() == profile[message.author.id].answer || message.content.toLowerCase() == 'skip') && profile[message.author.id].channel == message.channel.id && profile[message.author.id].mode != 'learn') {
-      if(URL.slice(URL.length - 5, URL.length) == '.webp')
-      URL = 'https://cdn.discordapp.com/attachments/600294780144189481/641639925174763530/breakbot.jpg';
       if(message.content.toLowerCase() == 'skip')
       message.reply('Плохо.:rage:');
       else
@@ -283,7 +301,7 @@ client.on('message', async message => {
           learned:[],
           massid:[0,0]
         }
-        fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
+        fs.writeFileSync('./profile.json',JSON.stringify(profile, null, 4),(err)=>{if(err) console.log(err);});
       }
     }
     if(message.content.toLowerCase().slice(2, message.content.length) == 'help'){
@@ -292,16 +310,16 @@ client.on('message', async message => {
         message.channel.send(new Discord.RichEmbed()
             .setColor("0099ff")
             .setAuthor("MetaBOT", "https://cdn.discordapp.com/avatars/600705935228403722/3daed4e4f4174552d893477cc7d38c87.png?size=2048")
-            .setDescription("Биб-буп! Konnichiha, бро.  Я ,MetaBOT, создан для помощи в изучении японского языка и подготовки к экзамену  JLPT n5.\n\nА вот и мои команды:\n\n**j!help** - Краткий список команд и объяснение их предназначение\n\n**j!hiragana** - запускает тренажер для запоминания хираганы. Префикс перед ответом ставить не надо.\n\n**j!katakana** - запускает тренажер для запоминания катаканы. Префикс перед ответом ставить не надо.\n\n**j!read** - запускает тренажер для чтения слов на хирагане и катакане. Префикс перед ответом ставить не надо.\n\n**j!learn** - запускает тренажер, который вас закидывает вашей личной колодой карточек со словами, которая по мере изучения будет расширяться.\n\nИсходный код: https://github.com/Metasux/MetaJesus")
+            .setDescription("Биб-буп! Konnichiha, бро.  Я ,MetaBOT, создан для помощи в изучении японского языка и подготовки к экзамену  JLPT n5.\n\nА вот и мои команды:\n\n**j!help** - Краткий список команд и объяснение их предназначение\n\n**j!hiragana** - запускает тренажер для запоминания хираганы. Префикс перед ответом ставить не надо.\n\n**j!katakana** - запускает тренажер для запоминания катаканы. Префикс перед ответом ставить не надо.\n\n**j!read** - запускает тренажер для чтения слов на хирагане и катакане. Префикс перед ответом ставить не надо.\n\n**j!learn** - запускает тренажер, который вас закидывает вашей личной колодой карточек со словами, которая по мере изучения будет расширяться.\n\n**j!lhetai** - Включает режим для любителей горячего. :3 Повторный ввод выключает режим. Работает только в ЛС и NSFW каналах.\n\nИсходный код: https://github.com/Metasux/MetaJesus")
             .setTitle("Информация")
-            .setFooter("ByМетøчка v1.8", "https://avatars2.githubusercontent.com/u/49251114?s=460&amp;v=4"));
+            .setFooter("ByМетøчка v1.9", "https://avatars2.githubusercontent.com/u/49251114?s=460&amp;v=4"));
     }
   }
     if(message.content.toLowerCase().slice(2, message.content.length) == 'hiragana'){
       for (var i = 0; i < 1 ; i++){
         profile[message.author.id].mode = 'hiragana';
         profile[message.author.id].channel = message.channel.id;
-        fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
+        fs.writeFileSync('./profile.json',JSON.stringify(profile, null, 4),(err)=>{if(err) console.log(err);});
       }
       HIRAGANA();
       message.channel.send('Ну раз хирагана, то хирагана.')
@@ -311,7 +329,7 @@ client.on('message', async message => {
       for (var i = 0; i < 1 ; i++){
         profile[message.author.id].mode = 'katakana';
         profile[message.author.id].channel = message.channel.id;
-        fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
+        fs.writeFileSync('./profile.json',JSON.stringify(profile, null, 4),(err)=>{if(err) console.log(err);});
       }
       KATAKANA();
       message.channel.send('Ну раз катакана, то катакана.')
@@ -320,7 +338,7 @@ client.on('message', async message => {
       for (var i = 0; i < 1 ; i++){
         profile[message.author.id].mode = 'read';
         profile[message.author.id].channel = message.channel.id;
-        fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
+        fs.writeFileSync('./profile.json',JSON.stringify(profile, null, 4),(err)=>{if(err) console.log(err);});
       }
       READ();
       message.channel.send('Ничего себе, читать будешь? Ну оки-доки!')
@@ -329,10 +347,26 @@ client.on('message', async message => {
       for (var i = 0; i < 1 ; i++){
         profile[message.author.id].mode = 'learn';
         profile[message.author.id].channel = message.channel.id;
-        fs.writeFile('./profile.json',JSON.stringify(profile),(err)=>{if(err) console.log(err);});
+        fs.writeFileSync('./profile.json',JSON.stringify(profile, null, 4),(err)=>{if(err) console.log(err);});
       }
       LEARN()
       message.channel.send('Ну окей, переводи.')
+    }
+    if(message.content.toLowerCase().slice(2, message.content.length) == 'hentai'){
+      if(profile[message.author.id].hentai === false){
+        message.channel.send('Hentai режим включен. Он кстати работает только в NSFW канале и в личных сообщениях. :3')
+        for (var i = 0; i < 1 ; i++){
+          profile[message.author.id].hentai = true;
+          fs.writeFileSync('./profile.json',JSON.stringify(profile, null, 4),(err)=>{if(err) console.log(err);});
+        }
+      }
+      else{
+        message.channel.send('Hentai режим выключен. ^_^')
+        for (var i = 0; i < 1 ; i++){
+          profile[message.author.id].hentai = false;
+          fs.writeFileSync('./profile.json',JSON.stringify(profile, null, 4),(err)=>{if(err) console.log(err);});
+        }
+      }
     }
   }
 });
@@ -350,4 +384,4 @@ client.on('messageUpdate', (msg, newmsg) => {
 })
 
 client.login(config.token);
-//ByМетøчка for himself v1.8
+//ByМетøчка for himself v1.9
