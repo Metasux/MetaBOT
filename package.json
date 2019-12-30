@@ -2,7 +2,7 @@
   "name": "metabot",
   "version": "1.9",
   "scripts": {
-    "start": "node MetaBOT.js"
+    "build": "node MetaBOT.js"
   },
   "dependencies": {
     "canvas": "^2.6.0",
