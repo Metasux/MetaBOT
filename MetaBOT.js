@@ -43,10 +43,7 @@ async function NEKOS_API(message){
           if(uurrll === 'https://neko-love.xyz/api/v1/neko') URL[0] = parsedData.url;
           else URL[1] = parsedData.url;
           console.log(parsedData.url)
-          if(parsedData.url.slice(parsedData.url.length - 5, parsedData.url.length) == '.webp'){
-            NEKOS_API(message)
-            console.log('замена')
-          }
+          if(parsedData.url.endsWith(".webp")) NEKOS_API(message);
       } catch (e) {
           console.error(e.message);
       }
@@ -67,7 +64,7 @@ client.on('message', async message => {
     }
     if(Math.floor(Math.random() * (3 - 0)) == 0 && profile[message.author.id].mode === 'learn'){
       [string1, string2] = [string2, string1]
-      temp1 = 150;
+      temp1 = 70;
       for (var i = 0; i < 1 ; i++){
         profile[message.author.id].answer = [string2,string3],
         fs.writeFileSync('./profile.json',JSON.stringify(profile, null, 4),(err)=>{if(err) console.log(err);});
@@ -79,6 +76,7 @@ client.on('message', async message => {
         fs.writeFileSync('./profile.json',JSON.stringify(profile, null, 4),(err)=>{if(err) console.log(err);});
       }
     }
+    
     const canvas = Canvas.createCanvas(250, 250);
     const ctx = canvas.getContext('2d');
     ctx.rect(20, 20, canvas.width-40, canvas.height-40);
@@ -95,23 +93,18 @@ client.on('message', async message => {
       ctx.drawImage(background, 0, (background.height-background.width)/2, background.width, background.width, 0, 0, canvas.width, canvas.height);
     ctx.globalCompositeOperation = 'source-over';
     ctx.font = (temp1+250)/string1.length+'px sans-serif';
-    ctx.fillStyle = '#000000';
-    ctx.textAlign = 'center';
-    ctx.textBaseline = 'middle';
-    ctx.fillText(string1, 125, 125);
-    ctx.font = (temp1+250)/string1.length+'px sans-serif';
     ctx.fillStyle = '#ffffff';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
-    ctx.fillText(string1, 125, 125);
+    ctx.fillText(string1.toUpperCase(), 125, 125);
     ctx.strokeStyle = "#000000";
     ctx.font = (temp1+250)/string1.length+'px sans-serif';
     ctx.lineWidth = 2
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
-    ctx.strokeText(string1, 125, 125);
+    ctx.strokeText(string1.toUpperCase(), 125, 125);
     const buf = canvas.toBuffer('image/png');
-    if(profile[message.author.id].mode === ('hiragana'||'katakana')){
+    if((profile[message.author.id].mode == 'hiragana')||(profile[message.author.id].mode == 'katakana')){
       message.channel.send("Что это за символ, "+message.author.username+"?", {
         embed: {
           color: 0x7486C2,
@@ -238,36 +231,45 @@ client.on('message', async message => {
 
   if(!profile[message.author.id] === false){
     if(profile[message.author.id].channel == message.channel.id && profile[message.author.id].mode == 'learn' && message.content.toLowerCase().slice(0, 2) != 'j!'){
-      if(message.content.toLowerCase() == 'skip'){
-        message.reply('плохо!!! Ответ был ``'+profile[message.author.id].answer+'`` :rage:');
-        LEARN()
+      if(message.content.toLowerCase() == 'stop'){
+        message.reply('ладно, отдыхай... :(');
+        for (var i = 0; i < 1 ; i++){
+          profile[message.author.id].mode = '';
+          fs.writeFileSync('./profile.json',JSON.stringify(profile, null, 4),(err)=>{if(err) console.log(err);});
+        }
       }
       else{
-        if(profile[message.author.id].answer.indexOf(message.content.toLowerCase()) !== -1){
-          message.reply('правильно.');
-          if(profile[message.author.id].massid[0] === 1){
-            if(profile[message.author.id].points[profile[message.author.id].massid[1]] < 20){
-              for (var i = 0; i < 1 ; i++){
-                profile[message.author.id].points[profile[message.author.id].massid[1]]++
-                fs.writeFileSync('./profile.json',JSON.stringify(profile, null, 4),(err)=>{if(err) console.log(err);});
-              }
-            }
-            else{
-              for (var i = 0; i < 1 ; i++){
-                profile[message.author.id].points[profile[message.author.id].massid[1]] = 0;
-                profile[message.author.id].learned.push(profile[message.author.id].learning[profile[message.author.id].massid[1]]);
-                console.log(profile[message.author.id].learning[profile[message.author.id].massid[1]])
-                profile[message.author.id].learning[profile[message.author.id].massid[1]] = profile[message.author.id].learning.length + profile[message.author.id].learned.length -1;
-                console.log(profile[message.author.id].learning.length + profile[message.author.id].learned.length -1)
-                fs.writeFileSync('./profile.json',JSON.stringify(profile, null, 4),(err)=>{if(err) console.log(err);});
-              }
-            }
-          }
+        if(message.content.toLowerCase() == 'skip'){
+          message.reply('плохо!!! Ответ был ``'+profile[message.author.id].answer+'`` :rage:');
           LEARN()
         }
         else{
-          message.reply('неправильно. Ответ был ``'+profile[message.author.id].answer+'`` :rage:');
-          LEARN()
+          if(profile[message.author.id].answer.indexOf(message.content.toLowerCase()) !== -1){
+            message.reply('правильно.');
+            if(profile[message.author.id].massid[0] === 1){
+              if(profile[message.author.id].points[profile[message.author.id].massid[1]] < 20){
+                for (var i = 0; i < 1 ; i++){
+                  profile[message.author.id].points[profile[message.author.id].massid[1]]++
+                  fs.writeFileSync('./profile.json',JSON.stringify(profile, null, 4),(err)=>{if(err) console.log(err);});
+                }
+              }
+              else{
+                for (var i = 0; i < 1 ; i++){
+                  profile[message.author.id].points[profile[message.author.id].massid[1]] = 0;
+                  profile[message.author.id].learned.push(profile[message.author.id].learning[profile[message.author.id].massid[1]]);
+                  console.log(profile[message.author.id].learning[profile[message.author.id].massid[1]])
+                  profile[message.author.id].learning[profile[message.author.id].massid[1]] = profile[message.author.id].learning.length + profile[message.author.id].learned.length -1;
+                  console.log(profile[message.author.id].learning.length + profile[message.author.id].learned.length -1)
+                  fs.writeFileSync('./profile.json',JSON.stringify(profile, null, 4),(err)=>{if(err) console.log(err);});
+                }
+              }
+            }
+            LEARN()
+          }
+          else{
+            message.reply('неправильно. Ответ был ``'+profile[message.author.id].answer+'`` :rage:');
+            LEARN()
+          }
         }
       }
     }
