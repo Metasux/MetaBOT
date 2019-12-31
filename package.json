@@ -2,7 +2,7 @@
   "name": "metabot",
   "version": "1.6",
   "scripts": {
-    "build": "node MetaBOT.js"
+    "build": "now --public"
   },
   "dependencies": {
     "canvas": "^2.6.0",
