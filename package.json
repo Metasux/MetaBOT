@@ -1,6 +1,6 @@
 {
   "name": "metabot",
-  "version": "1.9",
+  "version": "1.6",
   "scripts": {
     "build": "node MetaBOT.js"
   },

@@ -3,7 +3,6 @@ const Canvas = require('canvas');
 const client = new Discord.Client();
 const { get } = require("https");
 const fs = require('fs');
-let config = require('./config.json');
 let kana = require('./kana.json');
 let vocabulary = require('./vocabulary.json');
 let vocabulary2 = require('./vocabulary2.json');
@@ -385,5 +384,5 @@ client.on('messageUpdate', (msg, newmsg) => {
   }
 })
 
-client.login(config.token);
+client.login(process.env.TOKEN);
 //ByМетøчка for himself v1.9
