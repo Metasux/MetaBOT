@@ -91,13 +91,13 @@ client.on('message', async message => {
     else
       ctx.drawImage(background, 0, (background.height-background.width)/2, background.width, background.width, 0, 0, canvas.width, canvas.height);
     ctx.globalCompositeOperation = 'source-over';
-    ctx.font = (temp1+250)/string1.length+'px sans-serif';
+    ctx.font = (temp1+250)/string1.length;
     ctx.fillStyle = '#ffffff';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     ctx.fillText(string1.toUpperCase(), 125, 125);
     ctx.strokeStyle = "#000000";
-    ctx.font = (temp1+250)/string1.length+'px sans-serif';
+    ctx.font = (temp1+250)/string1.length;
     ctx.lineWidth = 2
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
