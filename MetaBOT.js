@@ -4,6 +4,7 @@ const client = new Discord.Client();
 const { get } = require("https");
 const fs = require('fs');
 let kana = require('./kana.json');
+let config = require('./config.json');
 let vocabulary = require('./vocabulary.json');
 let vocabulary2 = require('./vocabulary2.json');
 let profile = require('./profile.json');
@@ -16,6 +17,7 @@ client.on('ready', () => {
   client.user.setGame('j!help for help')
   NEKOS_API()
 });
+
 async function NEKOS_API(message){
   var uurrll = '';
   if(URL[1] != 'none'){
@@ -41,7 +43,6 @@ async function NEKOS_API(message){
           const parsedData = JSON.parse(rawData);
           if(uurrll === 'https://neko-love.xyz/api/v1/neko') URL[0] = parsedData.url;
           else URL[1] = parsedData.url;
-          console.log(parsedData.url)
           if(parsedData.url.endsWith(".webp")) NEKOS_API(message);
       } catch (e) {
           console.error(e.message);
@@ -54,7 +55,10 @@ async function NEKOS_API(message){
 
 
 client.on('message', async message => {
+  date = new Date();
+  var time1 = date;
   async function RENDER(string1, string2, string3){
+    if(URL[0] == 'none') [URL[0],URL[1]]=['https://i.pinimg.com/564x/4c/0a/c7/4c0ac792d8170b2180267607e72480ae.jpg','https://i.pinimg.com/564x/4c/0a/c7/4c0ac792d8170b2180267607e72480ae.jpg'];
     var temp1 = 0;
     await NEKOS_API(message);
     function HENTAI(){
@@ -91,13 +95,13 @@ client.on('message', async message => {
     else
       ctx.drawImage(background, 0, (background.height-background.width)/2, background.width, background.width, 0, 0, canvas.width, canvas.height);
     ctx.globalCompositeOperation = 'source-over';
-    ctx.font = (temp1+250)/string1.length;
+    ctx.font = (temp1+250)/string1.length+'px sans-serif';
     ctx.fillStyle = '#ffffff';
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     ctx.fillText(string1.toUpperCase(), 125, 125);
     ctx.strokeStyle = "#000000";
-    ctx.font = (temp1+250)/string1.length;
+    ctx.font = (temp1+250)/string1.length+'px sans-serif';
     ctx.lineWidth = 2
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
@@ -190,6 +194,9 @@ client.on('message', async message => {
         });
       }
     }
+    date = new Date();
+    var time2 = date;
+    console.log('Took '+(time2-time1)+ ' ms.')
   }
   function HIRAGANA(){
     var rand = Math.floor(Math.random() * (70 - 0 + 1)) + 0;
@@ -384,5 +391,5 @@ client.on('messageUpdate', (msg, newmsg) => {
   }
 })
 
-client.login(process.env.TOKEN);
+client.login(config.token);
 //ByМетøчка for himself v1.9
